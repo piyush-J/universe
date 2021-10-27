@@ -1,25 +1,11 @@
 #!/bin/bash
 
-# Keep the environment settings from setup.sh script
 export MYDIR=`dirname $0`
 . ./$MYDIR/setup.sh
 
-# dist directory of CheckerFramework Inference
-distDir=$CFI/dist
+CHECKER=universe.GUTChecker
 
-SOLVER="universe.solver.GUTSolverEngine"
+SOLVER=universe.solver.GUTSolverEngine
+IS_HACK=true
 
-declare -a ARGS
-for i in "$@" ; do
-    if [[ $i == "-ds" ]] ; then
-        echo "Configured to use debug solver"
-        SOLVER="checkers.inference.solver.DebugSolver"
-        continue
-    fi
-    ARGS[${#ARGS[@]}]="$i"
-done
-
-# echo "${ARGS[@]}"
-
-# Start the inference: jar files are used when making inference
-java -cp "$distDir"/checker.jar:"$distDir"/plume.jar:"$distDir"/checker-framework-inference.jar:$CLASSPATH checkers.inference.InferenceLauncher --checker universe.GUTChecker --solver "$SOLVER" --solverArgs=useGraph=false,collectStatistic=true --hacks=true --afuOutputDir=./annotated -m ROUNDTRIP "${ARGS[@]}"
+$CFI/scripts/inference-dev --checker "$CHECKER" --solver "$SOLVER" --solverArgs="collectStatistics=true" --hacks="$IS_HACK" -m ROUNDTRIP -afud ./annotated "$@"

@@ -4,7 +4,7 @@ set -e
 export MYDIR=`dirname $0`
 . ./$MYDIR/setup.sh
 
-export CLASSPATH=./bin/src:"$CFI"/dist/checker-framework-inference.jar:$CLASSPATH
+echo $CLASSPATH
 
 DEBUG=""
 CHECKER="universe.GUTChecker"
@@ -13,7 +13,7 @@ declare -a ARGS
 for i in "$@" ; do
     if [[ $i == "-d" ]] ; then
         echo "Typecheck using debug mode. Listening at port 5050. Waiting for connection...."
-        DEBUG="-J-Xdebug -J-Xrunjdwp:transport=dt_socket,server=y,suspend=y,address=5050"
+        DEBUG="-J-Xdebug -J-Xrunjdwp:transport=dt_socket,server=y,suspend=y,address=172.18.137.239:5555"
         continue
     fi
 
@@ -28,4 +28,5 @@ else
 	cmd="javac "$DEBUG" -cp "${CLASSPATH}" -processor "${CHECKER}" -AatfDoNotCache "${ARGS[@]}""
 fi
 
+echo "$cmd"
 eval "$cmd"
