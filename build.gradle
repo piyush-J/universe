@@ -55,7 +55,7 @@ sourceSets {
 
     test {
         java {
-            srcDirs = ["tst"]
+            srcDirs = ["test"]
         }
     }
 }
@@ -70,7 +70,7 @@ compileJava {
 
 afterEvaluate {
     // Create a task for each JUnit test class whose name is the same as the JUnit class name.
-    sourceSets.test.allJava.filter { it.path.contains("${universePath}/tst") }.forEach { file ->
+    sourceSets.test.allJava.filter { it.path.contains("${universePath}/test") }.forEach { file ->
         String junitClassName = file.name.replaceAll(".java", "")
         String testName = junitClassName.replaceAll("Test", "")
         tasks.create(name: "${junitClassName}", type: Test) {
