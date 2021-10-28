@@ -9,23 +9,32 @@ echo $CLASSPATH
 DEBUG=""
 CHECKER="universe.GUTChecker"
 
-declare -a ARGS
-for i in "$@" ; do
-    if [[ $i == "-d" ]] ; then
-        echo "Typecheck using debug mode. Listening at port 5050. Waiting for connection...."
-        DEBUG="-J-Xdebug -J-Xrunjdwp:transport=dt_socket,server=y,suspend=y,address=172.18.137.239:5555"
-        continue
-    fi
+POSITIONAL=()
+while [[ $# -gt 0 ]]; do
+  key="$1"
 
-    ARGS[${#ARGS[@]}]="$i"
+  case $key in
+    -d|--debug)
+      ipaddr="$2"
+      DEBUG="-J-Xdebug -J-Xrunjdwp:transport=dt_socket,server=y,suspend=y,address=${ipaddr}"
+      shift # past argument
+      shift # past value
+      ;;
+    *)    # unknown option
+      POSITIONAL+=("$1") # save it in an array for later
+      shift # past argument
+      ;;
+  esac
 done
+
+set -- "${POSITIONAL[@]}"
 
 cmd=""
 
 if [ "$DEBUG" == "" ]; then
-	cmd="javac -cp "${CLASSPATH}" -processor "${CHECKER}" "${ARGS[@]}""
+	cmd="javac -cp "${CLASSPATH}" -processor "${CHECKER}" "$@""
 else
-	cmd="javac "$DEBUG" -cp "${CLASSPATH}" -processor "${CHECKER}" -AatfDoNotCache "${ARGS[@]}""
+	cmd="javac "$DEBUG" -cp "${CLASSPATH}" -processor "${CHECKER}" -AatfDoNotCache "$@""
 fi
 
 echo "$cmd"
