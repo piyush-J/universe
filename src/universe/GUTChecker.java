@@ -1,17 +1,12 @@
 package universe;
 
+import checkers.inference.*;
 import universe.qual.Any;
 import universe.qual.Bottom;
 import universe.qual.Lost;
 import universe.qual.Peer;
 import universe.qual.Rep;
 import universe.qual.Self;
-import checkers.inference.BaseInferrableChecker;
-import checkers.inference.InferenceAnnotatedTypeFactory;
-import checkers.inference.InferenceChecker;
-import checkers.inference.InferenceVisitor;
-import checkers.inference.InferrableChecker;
-import checkers.inference.SlotManager;
 import checkers.inference.model.ConstraintManager;
 import org.checkerframework.common.basetype.BaseAnnotatedTypeFactory;
 import org.checkerframework.dataflow.qual.Pure;
@@ -45,8 +40,8 @@ public class GUTChecker extends BaseInferrableChecker {
     }
 
     @Override
-    public BaseAnnotatedTypeFactory createRealTypeFactory() {
-        return new GUTAnnotatedTypeFactory(this);
+    public BaseInferenceRealTypeFactory createRealTypeFactory(boolean infer) {
+        return new GUTAnnotatedTypeFactory(this, infer);
     }
 
     @Override
