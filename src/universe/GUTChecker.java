@@ -1,6 +1,12 @@
 package universe;
 
-import checkers.inference.*;
+import checkers.inference.BaseInferenceRealTypeFactory;
+import checkers.inference.BaseInferrableChecker;
+import checkers.inference.InferenceAnnotatedTypeFactory;
+import checkers.inference.InferenceChecker;
+import checkers.inference.InferenceVisitor;
+import checkers.inference.InferrableChecker;
+import checkers.inference.SlotManager;
 import universe.qual.Any;
 import universe.qual.Bottom;
 import universe.qual.Lost;
