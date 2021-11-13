@@ -150,6 +150,9 @@ public class GUTVisitor extends InferenceVisitor<GUTChecker, BaseAnnotatedTypeFa
         };
     }
 
+    /**
+     * There is no need to issue a warning if the result type of the constructor is not top in GUT.
+     */
     @Override
     protected void checkConstructorResult(
             AnnotatedTypeMirror.AnnotatedExecutableType constructorType, ExecutableElement constructorElement) {}
