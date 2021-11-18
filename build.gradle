@@ -18,7 +18,7 @@ println '-------------------------------'
 println 'JSR308: ' + jsr308
 println 'CF:     ' + cfPath
 println 'CFI:    ' + cfiPath
-println 'UNIVERSE:    ' + universePath
+println 'UNIVERSE: ' + universePath
 
 repositories {
     mavenCentral()
