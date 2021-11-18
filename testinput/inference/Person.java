@@ -1,6 +1,6 @@
-import java.util.*;
-import universe.qual.*;
+import java.util.ArrayList;
 
+// Based on the example in the GUT paper
 public class Person {
 
     Person spouse;
