@@ -27,7 +27,8 @@ repositories {
 def framework_test_files = fileTree(dir: "${cfPath}/framework-test/build/libs", include: "framework-test-*.jar")
 List<File> list_of_files = new ArrayList<>(framework_test_files.getFiles()) // gives us the list of files in the above directory
 Collections.sort(list_of_files) // sort the list
-def framework_test_jar = files(list_of_files[list_of_files.size()-1]) // prevents the use of older versions by fetching the most recent framework-test-*.*.*.jar (the last element)
+// prevents the use of older versions by fetching the most recent framework-test-*.*.*.jar (the last element)
+def framework_test_jar = files(list_of_files[list_of_files.size()-1])
 
 dependencies {
     implementation fileTree(dir: "${cfPath}/checker/dist", include: "checker.jar")
