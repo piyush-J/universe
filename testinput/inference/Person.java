@@ -7,7 +7,8 @@ public class Person {
     Account savings;
     ArrayList<Person> friends;
 
-    Person(){
+    Person() {
+
         friends = new ArrayList<Person>();
     }
 
