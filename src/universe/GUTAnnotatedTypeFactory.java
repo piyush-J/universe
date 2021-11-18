@@ -111,7 +111,6 @@ public class GUTAnnotatedTypeFactory extends BaseInferenceRealTypeFactory {
     /**
      * Replace annotation of extends or implements clause with SELF in GUT.
      */
-
     @Override
     public AnnotatedTypeMirror getTypeOfExtendsImplements(Tree clause) {
         AnnotatedTypeMirror s = super.getTypeOfExtendsImplements(clause);
