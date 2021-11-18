@@ -15,9 +15,9 @@ println ''
 println '-------------------------------'
 println 'Important Environment Variables'
 println '-------------------------------'
-println 'JSR308: ' + jsr308
-println 'CF:     ' + cfPath
-println 'CFI:    ' + cfiPath
+println 'JSR308:   ' + jsr308
+println 'CF:       ' + cfPath
+println 'CFI:      ' + cfiPath
 println 'UNIVERSE: ' + universePath
 
 repositories {
