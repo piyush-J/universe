@@ -3,7 +3,7 @@
 export MYDIR=`dirname $0`
 . ./$MYDIR/setup.sh
 
-CHECKER=universe.GUTChecker
+CHECKER=universe.UniverseChecker
 
 IS_HACK=true
 

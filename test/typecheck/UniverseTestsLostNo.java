@@ -1,4 +1,4 @@
-package GUT;
+package universe;
 
 import java.io.File;
 import java.util.ArrayList;
@@ -7,10 +7,11 @@ import java.util.List;
 import org.checkerframework.framework.test.CheckerFrameworkPerFileTest;
 import org.checkerframework.framework.test.TestUtilities;
 import org.junit.runners.Parameterized.Parameters;
+import universe.UniverseChecker;
 
-public class GUTTestsLostNo extends CheckerFrameworkPerFileTest {
-    public GUTTestsLostNo(File testFile) {
-        super(testFile, universe.GUTChecker.class, "", "-Anomsgtext", "-d", "testTmp");
+public class UniverseTestsLostNo extends CheckerFrameworkPerFileTest {
+    public UniverseTestsLostNo(File testFile) {
+        super(testFile, UniverseChecker.class, "", "-Anomsgtext", "-d", "testTmp");
     }
 
     @Parameters

@@ -18,7 +18,7 @@ do
     build_cmd="$build_cmd "${i}""
 done
 
-CHECKER="universe.GUTChecker"
+CHECKER="universe.UniverseChecker"
 
 #Typechecking or inference
 if [[ "$1" = "-t" ]] ; then
@@ -30,7 +30,7 @@ elif [[ "$1" = "-i" ]] ; then
     echo "Cleaning logs and annotated directory from previous result"
     rm -rf logs annotated
     echo "Cleaning Done."
-    SOLVER="universe.solver.GUTSolverEngine"
+    SOLVER="universe.solver.UniverseSolverEngine"
     running_cmd="python $DLJC/dljc -t inference --checker "${CHECKER}" --solver "${SOLVER}" --solverArgs=\"collectStatistic=true,useGraph=false\" --mode ROUNDTRIP -afud $WORKING_DIR/annotated -o logs -- $build_cmd "
 else
     echo "Unknown tool: should be either -t|-i but found: ${1}"

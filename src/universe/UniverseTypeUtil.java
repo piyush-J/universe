@@ -10,7 +10,6 @@ import com.sun.source.util.TreePath;
 import org.checkerframework.framework.qual.DefaultFor;
 import org.checkerframework.framework.type.AnnotatedTypeMirror;
 import org.checkerframework.javacutil.TreePathUtil;
-import org.checkerframework.javacutil.TreeUtils;
 import org.checkerframework.javacutil.TypesUtils;
 import universe.qual.Bottom;
 
@@ -24,9 +23,9 @@ import javax.lang.model.type.TypeKind;
 import java.util.Arrays;
 import java.util.List;
 
-import static universe.GUTChecker.SELF;
+import static universe.UniverseChecker.SELF;
 
-public class GUTTypeUtil {
+public class UniverseTypeUtil {
 
     private static boolean isInTypesOfImplicitForOfBottom(AnnotatedTypeMirror atm) {
         DefaultFor defaultFor = Bottom.class.getAnnotation(DefaultFor.class);

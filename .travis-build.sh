@@ -34,5 +34,5 @@ fi
 # Build checker-framework-inference
 (cd $JSR308/checker-framework-inference && ./gradlew dist)
 
-# Build GUT
+# Build Universe
 (cd $JSR308/universe && ./gradlew build)

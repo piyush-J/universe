@@ -31,24 +31,24 @@ import javax.lang.model.element.AnnotationMirror;
 import javax.lang.model.element.ExecutableElement;
 import javax.lang.model.type.TypeKind;
 
-import static universe.GUTChecker.ANY;
-import static universe.GUTChecker.BOTTOM;
-import static universe.GUTChecker.LOST;
-import static universe.GUTChecker.PEER;
-import static universe.GUTChecker.REP;
-import static universe.GUTChecker.SELF;
+import static universe.UniverseChecker.ANY;
+import static universe.UniverseChecker.BOTTOM;
+import static universe.UniverseChecker.LOST;
+import static universe.UniverseChecker.PEER;
+import static universe.UniverseChecker.REP;
+import static universe.UniverseChecker.SELF;
 
 /**
- * Type visitor to either enforce or infer the gut type rules.
+ * Type visitor to either enforce or infer the universe type rules.
  *
  * @author wmdietl
  */
-public class GUTVisitor extends InferenceVisitor<GUTChecker, BaseAnnotatedTypeFactory> {
+public class UniverseVisitor extends InferenceVisitor<UniverseChecker, BaseAnnotatedTypeFactory> {
 
     private final boolean checkOaM;
     private final boolean checkStrictPurity;
 
-    public GUTVisitor(GUTChecker checker, InferenceChecker ichecker, BaseAnnotatedTypeFactory factory, boolean infer) {
+    public UniverseVisitor(UniverseChecker checker, InferenceChecker ichecker, BaseAnnotatedTypeFactory factory, boolean infer) {
         super(checker, ichecker, factory, infer);
 
         checkOaM = checker.getLintOption("checkOaM", false);
@@ -59,8 +59,8 @@ public class GUTVisitor extends InferenceVisitor<GUTChecker, BaseAnnotatedTypeFa
      * The type validator to ensure correct usage of ownership modifiers.
      */
     @Override
-    protected GUTValidator createTypeValidator() {
-        return new GUTValidator(checker, this, atypeFactory);
+    protected UniverseValidator createTypeValidator() {
+        return new UniverseValidator(checker, this, atypeFactory);
     }
 
     @Override
@@ -100,7 +100,7 @@ public class GUTVisitor extends InferenceVisitor<GUTChecker, BaseAnnotatedTypeFa
     }
 
     /**
-     * gut does not use receiver annotations, forbid them.
+     * Universe does not use receiver annotations, forbid them.
      */
     @Override
     public Void visitMethod(MethodTree node, Void p) {
@@ -109,7 +109,7 @@ public class GUTVisitor extends InferenceVisitor<GUTChecker, BaseAnnotatedTypeFa
         if (TreeUtils.isConstructor(node)) {
             AnnotatedDeclaredType constructorReturnType = (AnnotatedDeclaredType) executableType.getReturnType();
             if (infer) {
-                GUTTypeUtil.applyConstant(constructorReturnType, SELF);
+                UniverseTypeUtil.applyConstant(constructorReturnType, SELF);
             } else {
                 if (!constructorReturnType.hasAnnotation(SELF)) {
                     checker.reportError(node, "uts.constructor.not.self");
@@ -119,7 +119,7 @@ public class GUTVisitor extends InferenceVisitor<GUTChecker, BaseAnnotatedTypeFa
             AnnotatedDeclaredType declaredReceiverType = executableType.getReceiverType();
             if (declaredReceiverType != null) {
                 if (infer) {
-                    GUTTypeUtil.applyConstant(declaredReceiverType, SELF);
+                    UniverseTypeUtil.applyConstant(declaredReceiverType, SELF);
                 } else {
                     if (!declaredReceiverType.hasAnnotation(SELF)) {
                         checker.reportError(node, "uts.receiver.not.self");
@@ -151,7 +151,7 @@ public class GUTVisitor extends InferenceVisitor<GUTChecker, BaseAnnotatedTypeFa
     }
 
     /**
-     * There is no need to issue a warning if the result type of the constructor is not top in GUT.
+     * There is no need to issue a warning if the result type of the constructor is not top in Universe.
      */
     @Override
     protected void checkConstructorResult(
@@ -199,14 +199,14 @@ public class GUTVisitor extends InferenceVisitor<GUTChecker, BaseAnnotatedTypeFa
         // TODO I would say here by top-level, it's really main modifier instead of upper bounds of
         // type variables, as there is no "new T()" to create a new instance.
         if (infer) {
-            if (GUTTypeUtil.isImplicitlyBottomType(type)) {
+            if (UniverseTypeUtil.isImplicitlyBottomType(type)) {
                 effectiveIs(type, BOTTOM, "uts.new.ownership", node);
             } else {
                 mainIsNoneOf(type, new AnnotationMirror[] { LOST, ANY, SELF, BOTTOM }, "uts.new.ownership", node);
             }
 
         } else {
-            if (GUTTypeUtil.isImplicitlyBottomType(type)) {
+            if (UniverseTypeUtil.isImplicitlyBottomType(type)) {
                 if (!type.hasAnnotation(BOTTOM)) {
                     checker.reportError(node, "uts.new.ownership");
                 }
@@ -248,7 +248,7 @@ public class GUTVisitor extends InferenceVisitor<GUTChecker, BaseAnnotatedTypeFa
 
                 if (receiverType != null) {
                     ExecutableElement methodElement = TreeUtils.elementFromUse(node);
-                    if (!GUTTypeUtil.isPure(methodElement)) {
+                    if (!UniverseTypeUtil.isPure(methodElement)) {
                         if (infer) {
                             mainIsNoneOf(receiverType, new AnnotationMirror[]{ LOST, ANY }, "oam.call.forbidden", node);
                         } else {
@@ -429,6 +429,6 @@ public class GUTVisitor extends InferenceVisitor<GUTChecker, BaseAnnotatedTypeFa
     }
     
     @Override
-    // GUT does not need to check extends and implements
+    // Universe Type System does not need to check extends and implements
     protected void checkExtendsImplements(ClassTree classTree) {}
 }

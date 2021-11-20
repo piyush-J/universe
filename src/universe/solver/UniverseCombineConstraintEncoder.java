@@ -17,16 +17,16 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
-import static universe.GUTChecker.ANY;
-import static universe.GUTChecker.BOTTOM;
-import static universe.GUTChecker.LOST;
-import static universe.GUTChecker.PEER;
-import static universe.GUTChecker.REP;
-import static universe.GUTChecker.SELF;
+import static universe.UniverseChecker.ANY;
+import static universe.UniverseChecker.BOTTOM;
+import static universe.UniverseChecker.LOST;
+import static universe.UniverseChecker.PEER;
+import static universe.UniverseChecker.REP;
+import static universe.UniverseChecker.SELF;
 
-public class GUTCombineConstraintEncoder extends MaxSATAbstractConstraintEncoder implements CombineConstraintEncoder<VecInt[]> {
+public class UniverseCombineConstraintEncoder extends MaxSATAbstractConstraintEncoder implements CombineConstraintEncoder<VecInt[]> {
 
-    public GUTCombineConstraintEncoder(Lattice lattice, Map<AnnotationMirror, Integer> typeToInt) {
+    public UniverseCombineConstraintEncoder(Lattice lattice, Map<AnnotationMirror, Integer> typeToInt) {
         super(lattice, typeToInt);
     }
 

@@ -19,7 +19,6 @@ import org.checkerframework.dataflow.qual.Pure;
 import org.checkerframework.framework.source.SupportedLintOptions;
 import org.checkerframework.javacutil.AnnotationBuilder;
 
-import javax.annotation.processing.SupportedOptions;
 import javax.lang.model.element.AnnotationMirror;
 
 
@@ -29,7 +28,7 @@ import javax.lang.model.element.AnnotationMirror;
  * @author wmdietl
  */
 @SupportedLintOptions({"checkOaM", "checkStrictPurity"})
-public class GUTChecker extends BaseInferrableChecker {
+public class UniverseChecker extends BaseInferrableChecker {
 
     public static AnnotationMirror ANY, PEER, REP, LOST, SELF, BOTTOM, PURE;
 
@@ -47,13 +46,13 @@ public class GUTChecker extends BaseInferrableChecker {
 
     @Override
     public BaseInferenceRealTypeFactory createRealTypeFactory(boolean infer) {
-        return new GUTAnnotatedTypeFactory(this, infer);
+        return new UniverseAnnotatedTypeFactory(this, infer);
     }
 
     @Override
     public InferenceVisitor<?, ?> createVisitor(InferenceChecker checker,
             BaseAnnotatedTypeFactory factory, boolean infer) {
-        return new GUTVisitor(this, checker, factory, infer);
+        return new UniverseVisitor(this, checker, factory, infer);
     }
 
     @Override
@@ -66,7 +65,7 @@ public class GUTChecker extends BaseInferrableChecker {
             InferenceChecker inferenceChecker, InferrableChecker realChecker,
             BaseAnnotatedTypeFactory realTypeFactory, SlotManager slotManager,
             ConstraintManager constraintManager) {
-        return new GUTInferenceAnnotatedTypeFactory(inferenceChecker,
+        return new UniverseInferenceAnnotatedTypeFactory(inferenceChecker,
                 withCombineConstraints(), realTypeFactory, realChecker,
                 slotManager, constraintManager);
     }

@@ -1,11 +1,11 @@
 package universe;
 
-import static universe.GUTChecker.ANY;
-import static universe.GUTChecker.BOTTOM;
-import static universe.GUTChecker.LOST;
-import static universe.GUTChecker.PEER;
-import static universe.GUTChecker.REP;
-import static universe.GUTChecker.SELF;
+import static universe.UniverseChecker.ANY;
+import static universe.UniverseChecker.BOTTOM;
+import static universe.UniverseChecker.LOST;
+import static universe.UniverseChecker.PEER;
+import static universe.UniverseChecker.REP;
+import static universe.UniverseChecker.SELF;
 
 import javax.lang.model.element.AnnotationMirror;
 
@@ -14,9 +14,9 @@ import org.checkerframework.framework.type.AnnotatedTypeFactory;
 import org.checkerframework.framework.type.AnnotatedTypeMirror;
 import org.checkerframework.javacutil.AnnotationUtils;
 
-public class GUTViewpointAdapter extends AbstractViewpointAdapter {
+public class UniverseViewpointAdapter extends AbstractViewpointAdapter {
 
-    public GUTViewpointAdapter(AnnotatedTypeFactory atypeFactory) {
+    public UniverseViewpointAdapter(AnnotatedTypeFactory atypeFactory) {
         super(atypeFactory);
     }
 

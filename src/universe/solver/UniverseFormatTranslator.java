@@ -7,9 +7,9 @@ import checkers.inference.solver.backend.maxsat.encoder.MaxSATConstraintEncoderF
 import checkers.inference.solver.frontend.Lattice;
 import org.sat4j.core.VecInt;
 
-public class GUTFormatTranslator extends MaxSatFormatTranslator {
+public class UniverseFormatTranslator extends MaxSatFormatTranslator {
 
-    public GUTFormatTranslator(Lattice lattice) {
+    public UniverseFormatTranslator(Lattice lattice) {
         super(lattice);
 
     }
@@ -19,7 +19,7 @@ public class GUTFormatTranslator extends MaxSatFormatTranslator {
         return new MaxSATConstraintEncoderFactory(lattice, typeToInt, this){
             @Override
             public CombineConstraintEncoder<VecInt[]> createCombineConstraintEncoder() {
-                return new GUTCombineConstraintEncoder(lattice, typeToInt);
+                return new UniverseCombineConstraintEncoder(lattice, typeToInt);
             }
         };
     }

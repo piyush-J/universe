@@ -21,7 +21,6 @@ import com.sun.source.tree.ParameterizedTypeTree;
 import com.sun.source.tree.Tree;
 import com.sun.source.tree.TypeCastTree;
 import com.sun.source.util.TreePath;
-import org.checkerframework.common.basetype.BaseAnnotatedTypeFactory;
 import org.checkerframework.common.basetype.BaseTypeChecker;
 import org.checkerframework.framework.type.AnnotatedTypeMirror;
 import org.checkerframework.framework.type.AnnotatedTypeMirror.AnnotatedDeclaredType;
@@ -41,11 +40,8 @@ import java.util.Collections;
 import java.util.HashSet;
 import java.util.Set;
 
-import static universe.GUTChecker.ANY;
-import static universe.GUTChecker.BOTTOM;
-import static universe.GUTChecker.PEER;
-import static universe.GUTChecker.REP;
-import static universe.GUTChecker.SELF;
+import static universe.UniverseChecker.BOTTOM;
+import static universe.UniverseChecker.SELF;
 
 /**
  * Apply viewpoint adaptation and add implicit annotations to "this" and
@@ -53,9 +49,9 @@ import static universe.GUTChecker.SELF;
  *
  * @author wmdietl
  */
-public class GUTAnnotatedTypeFactory extends BaseInferenceRealTypeFactory {
+public class UniverseAnnotatedTypeFactory extends BaseInferenceRealTypeFactory {
 
-    public GUTAnnotatedTypeFactory(BaseTypeChecker checker, boolean infer) {
+    public UniverseAnnotatedTypeFactory(BaseTypeChecker checker, boolean infer) {
         super(checker, infer);
 
 //        addAliasedAnnotation(org.jmlspecs.annotation.Peer.class, PEER);
@@ -79,7 +75,7 @@ public class GUTAnnotatedTypeFactory extends BaseInferenceRealTypeFactory {
 
     @Override
     protected ViewpointAdapter createViewpointAdapter() {
-        return new GUTViewpointAdapter(this);
+        return new UniverseViewpointAdapter(this);
     }
 
     /**
@@ -89,9 +85,9 @@ public class GUTAnnotatedTypeFactory extends BaseInferenceRealTypeFactory {
     @Override
     protected TreeAnnotator createTreeAnnotator() {
         return new ListTreeAnnotator(
-                new GUTPropagationTreeAnnotator(this),
+                new UniversePropagationTreeAnnotator(this),
                 new LiteralTreeAnnotator(this),
-                new GUTTreeAnnotator()
+                new UniverseTreeAnnotator()
                 );
     }
 
@@ -104,12 +100,12 @@ public class GUTAnnotatedTypeFactory extends BaseInferenceRealTypeFactory {
 
     @Override
     public void addComputedTypeAnnotations(Element elt, AnnotatedTypeMirror type) {
-        GUTTypeUtil.defaultConstructorReturnToSelf(elt, type);
+        UniverseTypeUtil.defaultConstructorReturnToSelf(elt, type);
         super.addComputedTypeAnnotations(elt, type);
     }
 
     /**
-     * Replace annotation of extends or implements clause with SELF in GUT.
+     * Replace annotation of extends or implements clause with SELF in Universe.
      */
     @Override
     public AnnotatedTypeMirror getTypeOfExtendsImplements(Tree clause) {
@@ -121,10 +117,10 @@ public class GUTAnnotatedTypeFactory extends BaseInferenceRealTypeFactory {
     /**
      * Currently only needed to add the "self" modifier to "super".
      */
-    private class GUTTreeAnnotator extends TreeAnnotator {
+    private class UniverseTreeAnnotator extends TreeAnnotator {
 
-        private GUTTreeAnnotator() {
-            super(GUTAnnotatedTypeFactory.this);
+        private UniverseTreeAnnotator() {
+            super(UniverseAnnotatedTypeFactory.this);
         }
 
         /**
@@ -166,19 +162,19 @@ public class GUTAnnotatedTypeFactory extends BaseInferenceRealTypeFactory {
         @Override
         public Void visitMethod(MethodTree node, AnnotatedTypeMirror p) {
             ExecutableElement executableElement = TreeUtils.elementFromDeclaration(node);
-            GUTTypeUtil.defaultConstructorReturnToSelf(executableElement, p);
+            UniverseTypeUtil.defaultConstructorReturnToSelf(executableElement, p);
             return super.visitMethod(node, p);
         }
     }
 
-    private class GUTPropagationTreeAnnotator extends PropagationTreeAnnotator {
+    private class UniversePropagationTreeAnnotator extends PropagationTreeAnnotator {
         /**
          * Creates a {@link DefaultForTypeAnnotator}
          * from the given checker, using that checker's type hierarchy.
          *
          * @param atypeFactory
          */
-        public GUTPropagationTreeAnnotator(AnnotatedTypeFactory atypeFactory) {
+        public UniversePropagationTreeAnnotator(AnnotatedTypeFactory atypeFactory) {
             super(atypeFactory);
         }
 
@@ -276,7 +272,7 @@ public class GUTAnnotatedTypeFactory extends BaseInferenceRealTypeFactory {
          to always have immutable annotation. If this happens, we manually add immutable to type. We use
          addMissingAnnotations because we want to respect existing annotation on type*/
         private void applyImmutableIfImplicitlyBottom(AnnotatedTypeMirror type) {
-            if (GUTTypeUtil.isImplicitlyBottomType(type)) {
+            if (UniverseTypeUtil.isImplicitlyBottomType(type)) {
                 type.addMissingAnnotations(new HashSet<>(Arrays.asList(BOTTOM)));
             }
         }

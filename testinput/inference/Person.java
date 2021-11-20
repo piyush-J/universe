@@ -1,6 +1,6 @@
 import java.util.ArrayList;
 
-// Based on the example in the GUT paper
+// Based on the example in the Universe paper
 public class Person {
 
     Person spouse;

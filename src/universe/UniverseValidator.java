@@ -14,21 +14,21 @@ import org.checkerframework.javacutil.TreeUtils;
 import javax.lang.model.element.TypeElement;
 import java.util.List;
 
-import static universe.GUTChecker.BOTTOM;
-import static universe.GUTChecker.LOST;
-import static universe.GUTChecker.REP;
+import static universe.UniverseChecker.BOTTOM;
+import static universe.UniverseChecker.LOST;
+import static universe.UniverseChecker.REP;
 
 /**
  * This type validator ensures correct usage of ownership modifiers or generates
  * constraints to ensure well-formedness.
  */
-public class GUTValidator extends InferenceValidator {
+public class UniverseValidator extends InferenceValidator {
 
-    public GUTValidator(BaseTypeChecker checker,
-                                  InferenceVisitor<?, ?> visitor,
-                                  // GUTAnnotatedTypeFactory atypeFactory) {
-                                  // Is it correct? Only debugging.
-                                  AnnotatedTypeFactory atypeFactory) {
+    public UniverseValidator(BaseTypeChecker checker,
+                             InferenceVisitor<?, ?> visitor,
+                             // UniverseAnnotatedTypeFactory atypeFactory) {
+                             // Is it correct? Only debugging.
+                             AnnotatedTypeFactory atypeFactory) {
 
         super(checker, visitor, atypeFactory);
     }
@@ -64,8 +64,8 @@ public class GUTValidator extends InferenceValidator {
         List<AnnotatedTypeParameterBounds> typeParamBounds = atypeFactory.typeVariablesFromUse(type, element);
         for (AnnotatedTypeParameterBounds atpb : typeParamBounds) {
             if (infer) {
-                ((GUTVisitor)visitor).doesNotContain(atpb.getLowerBound(), LOST, "uts.lost.in.bounds", tree);
-                ((GUTVisitor)visitor).doesNotContain(atpb.getUpperBound(), LOST, "uts.lost.in.bounds", tree);
+                ((UniverseVisitor)visitor).doesNotContain(atpb.getLowerBound(), LOST, "uts.lost.in.bounds", tree);
+                ((UniverseVisitor)visitor).doesNotContain(atpb.getUpperBound(), LOST, "uts.lost.in.bounds", tree);
             } else {
                 // Previously, here also checks two bounds are not TypeKind.NULL. What's the reason?
                 if ((AnnotatedTypes.containsModifier(atpb.getUpperBound(), LOST)) ||
@@ -93,9 +93,9 @@ public class GUTValidator extends InferenceValidator {
     }
 
     private void checkStaticRepError(AnnotatedTypeMirror type, Tree tree) {
-        if (GUTTypeUtil.inStaticScope(visitor.getCurrentPath())) {
+        if (UniverseTypeUtil.inStaticScope(visitor.getCurrentPath())) {
             if (infer) {
-                ((GUTVisitor)visitor).doesNotContain(type, REP, "uts.static.rep.forbidden", tree);
+                ((UniverseVisitor)visitor).doesNotContain(type, REP, "uts.static.rep.forbidden", tree);
             } else {
                 if (AnnotatedTypes.containsModifier(type, REP)) {
                     checker.reportError(tree, "uts.static.rep.forbidden", type.getAnnotations(), type.toString());
@@ -105,9 +105,9 @@ public class GUTValidator extends InferenceValidator {
     }
 
     private void checkImplicitlyBottomTypeError(AnnotatedTypeMirror type, Tree tree) {
-        if (GUTTypeUtil.isImplicitlyBottomType(type)) {
+        if (UniverseTypeUtil.isImplicitlyBottomType(type)) {
             if (infer) {
-                ((GUTVisitor)visitor).effectiveIs(type, BOTTOM, "type.invalid.annotations.on.use", tree);
+                ((UniverseVisitor)visitor).effectiveIs(type, BOTTOM, "type.invalid.annotations.on.use", tree);
             } else {
                 if (!type.hasAnnotation(BOTTOM)) {
                     reportInvalidAnnotationsOnUse(type, tree);

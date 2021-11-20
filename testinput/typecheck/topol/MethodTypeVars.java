@@ -17,7 +17,7 @@ void foobar(Object p) {}
         String [] oa = this.toArray(new String[10]);
     }
 
-    void mGUT() {
+    void mUniverse() {
         @Rep Object o = this.transform(new @Rep Object());
         @Rep Object @Peer [] oa = this.toArray(new @Rep Object @Peer [10]);
 
