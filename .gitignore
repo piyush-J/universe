@@ -23,3 +23,10 @@
 # Annotated
 /annotated/
 *.jaif
+
+# Editor temp files
+*~
+
+/logs/
+/annotated/
+/testdata/
