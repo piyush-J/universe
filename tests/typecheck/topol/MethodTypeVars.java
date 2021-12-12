@@ -23,7 +23,7 @@ void foobar(Object p) {}
 
         // note that the following is not allowed, as "T[]" means "T @Peer[]"!
         // Hmm, maybe do add the @Poly annotation, mostly for arrays?
-        //:: error: (argument.type.incompatible)
+        // :: error: (uts.new.ownership) :: error: (type.invalid.annotations.on.use)
         @Rep String @Any [] oa2 = this.toArray(new @Rep String @Any [10]);
     }
 }
