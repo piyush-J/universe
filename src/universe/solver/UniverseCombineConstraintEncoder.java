@@ -17,12 +17,12 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
-import static universe.UniverseChecker.ANY;
-import static universe.UniverseChecker.BOTTOM;
-import static universe.UniverseChecker.LOST;
-import static universe.UniverseChecker.PEER;
-import static universe.UniverseChecker.REP;
-import static universe.UniverseChecker.SELF;
+import static universe.UniverseInferenceChecker.ANY;
+import static universe.UniverseInferenceChecker.BOTTOM;
+import static universe.UniverseInferenceChecker.LOST;
+import static universe.UniverseInferenceChecker.PEER;
+import static universe.UniverseInferenceChecker.REP;
+import static universe.UniverseInferenceChecker.SELF;
 
 public class UniverseCombineConstraintEncoder extends MaxSATAbstractConstraintEncoder implements CombineConstraintEncoder<VecInt[]> {
 

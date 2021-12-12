@@ -23,12 +23,13 @@ import org.checkerframework.framework.type.treeannotator.TreeAnnotator;
 
 import javax.lang.model.element.AnnotationMirror;
 
-import static universe.UniverseChecker.ANY;
-import static universe.UniverseChecker.BOTTOM;
-import static universe.UniverseChecker.SELF;
+import static universe.UniverseInferenceChecker.ANY;
+import static universe.UniverseInferenceChecker.BOTTOM;
+import static universe.UniverseInferenceChecker.PEER;
+import static universe.UniverseInferenceChecker.REP;
+import static universe.UniverseInferenceChecker.SELF;
 
-public class UniverseInferenceAnnotatedTypeFactory
-        extends InferenceAnnotatedTypeFactory {
+public class UniverseInferenceAnnotatedTypeFactory extends InferenceAnnotatedTypeFactory {
 
     public UniverseInferenceAnnotatedTypeFactory(InferenceChecker inferenceChecker,
                                                  boolean withCombineConstraints,
@@ -37,6 +38,10 @@ public class UniverseInferenceAnnotatedTypeFactory
                                                  ConstraintManager constraintManager) {
         super(inferenceChecker, withCombineConstraints, realTypeFactory,
                 realChecker, slotManager, constraintManager);
+
+        addAliasedTypeAnnotation(org.jmlspecs.annotation.Peer.class, PEER);
+        addAliasedTypeAnnotation(org.jmlspecs.annotation.Rep.class, REP);
+        addAliasedTypeAnnotation(org.jmlspecs.annotation.Readonly.class, ANY);
         postInit();
     }
 
@@ -136,7 +141,7 @@ public class UniverseInferenceAnnotatedTypeFactory
 
         @Override
         protected AnnotatedTypeMirror combineAnnotationWithType(AnnotationMirror receiverAnnotation,
-                AnnotatedTypeMirror declared) {
+                                                                AnnotatedTypeMirror declared) {
             if (UniverseTypeUtil.isImplicitlyBottomType(declared)) {
                 return declared;
             }
@@ -144,4 +149,3 @@ public class UniverseInferenceAnnotatedTypeFactory
         }
     }
 }
-

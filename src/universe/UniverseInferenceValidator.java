@@ -22,9 +22,9 @@ import static universe.UniverseInferenceChecker.REP;
  * This type validator ensures correct usage of ownership modifiers or generates
  * constraints to ensure well-formedness.
  */
-public class UniverseValidator extends InferenceValidator {
+public class UniverseInferenceValidator extends InferenceValidator {
 
-    public UniverseValidator(BaseTypeChecker checker,
+    public UniverseInferenceValidator(BaseTypeChecker checker,
                              InferenceVisitor<?, ?> visitor,
                              // UniverseAnnotatedTypeFactory atypeFactory) {
                              // Is it correct? Only debugging.
@@ -63,16 +63,16 @@ public class UniverseValidator extends InferenceValidator {
 
         List<AnnotatedTypeParameterBounds> typeParamBounds = atypeFactory.typeVariablesFromUse(type, element);
         for (AnnotatedTypeParameterBounds atpb : typeParamBounds) {
-            if (infer) {
-                ((UniverseInferenceVisitor)visitor).doesNotContain(atpb.getLowerBound(), LOST, "uts.lost.in.bounds", tree);
-                ((UniverseInferenceVisitor)visitor).doesNotContain(atpb.getUpperBound(), LOST, "uts.lost.in.bounds", tree);
-            } else {
-                // Previously, here also checks two bounds are not TypeKind.NULL. What's the reason?
-                if ((AnnotatedTypes.containsModifier(atpb.getUpperBound(), LOST)) ||
-                                AnnotatedTypes.containsModifier(atpb.getLowerBound(), LOST)) {
-                    checker.reportError(tree, "uts.lost.in.bounds", atpb.toString(), type.toString());
-                }
-            }
+//            if (infer) {
+            ((UniverseInferenceVisitor)visitor).doesNotContain(atpb.getLowerBound(), LOST, "uts.lost.in.bounds", tree);
+            ((UniverseInferenceVisitor)visitor).doesNotContain(atpb.getUpperBound(), LOST, "uts.lost.in.bounds", tree);
+//            } else {
+//                // Previously, here also checks two bounds are not TypeKind.NULL. What's the reason?
+//                if ((AnnotatedTypes.containsModifier(atpb.getUpperBound(), LOST)) ||
+//                        AnnotatedTypes.containsModifier(atpb.getLowerBound(), LOST)) {
+//                    checker.reportError(tree, "uts.lost.in.bounds", atpb.toString(), type.toString());
+//                }
+//            }
         }
 
         return super.visitParameterizedType(type, tree);
@@ -94,25 +94,25 @@ public class UniverseValidator extends InferenceValidator {
 
     private void checkStaticRepError(AnnotatedTypeMirror type, Tree tree) {
         if (UniverseTypeUtil.inStaticScope(visitor.getCurrentPath())) {
-            if (infer) {
-                ((UniverseInferenceVisitor)visitor).doesNotContain(type, REP, "uts.static.rep.forbidden", tree);
-            } else {
-                if (AnnotatedTypes.containsModifier(type, REP)) {
-                    checker.reportError(tree, "uts.static.rep.forbidden", type.getAnnotations(), type.toString());
-                }
-            }
+//            if (infer) {
+            ((UniverseInferenceVisitor)visitor).doesNotContain(type, REP, "uts.static.rep.forbidden", tree);
+//            } else {
+//                if (AnnotatedTypes.containsModifier(type, REP)) {
+//                    checker.reportError(tree, "uts.static.rep.forbidden", type.getAnnotations(), type.toString());
+//                }
+//            }
         }
     }
 
     private void checkImplicitlyBottomTypeError(AnnotatedTypeMirror type, Tree tree) {
         if (UniverseTypeUtil.isImplicitlyBottomType(type)) {
-            if (infer) {
-                ((UniverseInferenceVisitor)visitor).effectiveIs(type, BOTTOM, "type.invalid.annotations.on.use", tree);
-            } else {
-                if (!type.hasAnnotation(BOTTOM)) {
-                    reportInvalidAnnotationsOnUse(type, tree);
-                }
-            }
+//            if (infer) {
+            ((UniverseInferenceVisitor)visitor).effectiveIs(type, BOTTOM, "type.invalid.annotations.on.use", tree);
+//            } else {
+//                if (!type.hasAnnotation(BOTTOM)) {
+//                    reportInvalidAnnotationsOnUse(type, tree);
+//                }
+//            }
         }
     }
 }

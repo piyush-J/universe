@@ -28,7 +28,7 @@ import javax.lang.model.element.AnnotationMirror;
  * @author wmdietl
  */
 @SupportedLintOptions({"checkOaM", "checkStrictPurity"})
-public class UniverseChecker extends BaseInferrableChecker {
+public class UniverseInferenceChecker extends BaseInferrableChecker {
 
     public static AnnotationMirror ANY, PEER, REP, LOST, SELF, BOTTOM, PURE;
 
@@ -42,6 +42,7 @@ public class UniverseChecker extends BaseInferrableChecker {
         SELF = AnnotationBuilder.fromClass(getElementUtils(), Self.class);
         BOTTOM = AnnotationBuilder.fromClass(getElementUtils(), Bottom.class);
         PURE = AnnotationBuilder.fromClass(getElementUtils(), Pure.class);
+
     }
 
     @Override
@@ -52,7 +53,7 @@ public class UniverseChecker extends BaseInferrableChecker {
     @Override
     public InferenceVisitor<?, ?> createVisitor(InferenceChecker checker,
             BaseAnnotatedTypeFactory factory, boolean infer) {
-        return new UniverseVisitor(this, checker, factory, infer);
+        return new UniverseInferenceVisitor(this, checker, factory, infer);
     }
 
     @Override

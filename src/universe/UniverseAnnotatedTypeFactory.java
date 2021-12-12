@@ -40,8 +40,8 @@ import java.util.Collections;
 import java.util.HashSet;
 import java.util.Set;
 
-import static universe.UniverseChecker.BOTTOM;
-import static universe.UniverseChecker.SELF;
+import static universe.UniverseInferenceChecker.BOTTOM;
+import static universe.UniverseInferenceChecker.SELF;
 
 /**
  * Apply viewpoint adaptation and add implicit annotations to "this" and
@@ -53,11 +53,6 @@ public class UniverseAnnotatedTypeFactory extends BaseInferenceRealTypeFactory {
 
     public UniverseAnnotatedTypeFactory(BaseTypeChecker checker, boolean infer) {
         super(checker, infer);
-
-//        addAliasedAnnotation(org.jmlspecs.annotation.Peer.class, PEER);
-//        addAliasedAnnotation(org.jmlspecs.annotation.Rep.class, REP);
-//        addAliasedAnnotation(org.jmlspecs.annotation.Readonly.class, ANY);
-
         this.postInit();
     }
 
@@ -88,7 +83,7 @@ public class UniverseAnnotatedTypeFactory extends BaseInferenceRealTypeFactory {
                 new UniversePropagationTreeAnnotator(this),
                 new LiteralTreeAnnotator(this),
                 new UniverseTreeAnnotator()
-                );
+        );
     }
 
     protected Set<Class<? extends Annotation>> createSupportedTypeQualifiers() {

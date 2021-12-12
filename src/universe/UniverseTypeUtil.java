@@ -23,7 +23,7 @@ import javax.lang.model.type.TypeKind;
 import java.util.Arrays;
 import java.util.List;
 
-import static universe.UniverseChecker.SELF;
+import static universe.UniverseInferenceChecker.SELF;
 
 public class UniverseTypeUtil {
 
