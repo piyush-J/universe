@@ -4,7 +4,6 @@ import checkers.inference.test.CFInferenceTest;
 import org.checkerframework.framework.test.TestUtilities;
 import org.checkerframework.javacutil.Pair;
 import org.junit.runners.Parameterized.Parameters;
-import universe.UniverseChecker;
 import universe.solver.UniverseSolverEngine;
 
 import java.io.File;
@@ -15,7 +14,7 @@ import java.util.List;
 public class UniverseInferenceTest extends CFInferenceTest {
 
     public UniverseInferenceTest(File testFile) {
-        super(testFile, UniverseChecker.class, "",
+        super(testFile, UniverseInferenceChecker.class, "",
                 "-Anomsgtext", "-Astubs=src/universe/jdk.astub", "-d", "testTmp", "-doe");
     }
 
@@ -33,7 +32,7 @@ public class UniverseInferenceTest extends CFInferenceTest {
     @Parameters
     public static List<File> getTestFiles(){
         List<File> testfiles = new ArrayList<>();
-        testfiles.addAll(TestUtilities.findRelativeNestedJavaFiles("testinput", "inference"));
+        testfiles.addAll(TestUtilities.findRelativeNestedJavaFiles("tests", "inference"));
         return testfiles;
     }
 }

@@ -11,6 +11,4 @@ public class MethodInvocation {
 		// :: fixable-error: (argument.type.incompatible)
 		Object o = b.foo(op);
 	}
-
-
 }
