@@ -23,26 +23,9 @@ public class UniverseChecker extends BaseTypeChecker {
 
     //TODO Clarify the purpose of this
     public static boolean isAnyDefault(AnnotatedTypeMirror type) {
-        // if (!(type instanceof AnnotatedDeclaredType))
         return false;
-        /*
-        DeclaredType dtype = ((AnnotatedDeclaredType)type).getUnderlyingType();
-        return TypesUtils.isDeclaredOfName(dtype, "java.lang.String") ||
-        TypesUtils.isDeclaredOfName(dtype, "java.lang.Character");
-        */
     }
 
-//    @Override
-//    public boolean withViewpointAdaptation() {
-//        return true;
-//    }
-
-    /* TODO: purity/OaM checking
-    @Override
-    public boolean isAssignable(AnnotatedTypeMirror varType,
-            AnnotatedTypeMirror receiverType, Tree varTree) {
-        return super.isAssignable(varType, receiverType, varTree);
-    }
-    */
+    // TODO: purity/OaM checking
 
 }

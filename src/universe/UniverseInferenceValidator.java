@@ -8,7 +8,6 @@ import org.checkerframework.common.basetype.BaseTypeChecker;
 import org.checkerframework.framework.type.AnnotatedTypeFactory;
 import org.checkerframework.framework.type.AnnotatedTypeMirror;
 import org.checkerframework.framework.type.AnnotatedTypeParameterBounds;
-import org.checkerframework.framework.util.AnnotatedTypes;
 import org.checkerframework.javacutil.TreeUtils;
 
 import javax.lang.model.element.TypeElement;
@@ -63,16 +62,8 @@ public class UniverseInferenceValidator extends InferenceValidator {
 
         List<AnnotatedTypeParameterBounds> typeParamBounds = atypeFactory.typeVariablesFromUse(type, element);
         for (AnnotatedTypeParameterBounds atpb : typeParamBounds) {
-//            if (infer) {
             ((UniverseInferenceVisitor)visitor).doesNotContain(atpb.getLowerBound(), LOST, "uts.lost.in.bounds", tree);
             ((UniverseInferenceVisitor)visitor).doesNotContain(atpb.getUpperBound(), LOST, "uts.lost.in.bounds", tree);
-//            } else {
-//                // Previously, here also checks two bounds are not TypeKind.NULL. What's the reason?
-//                if ((AnnotatedTypes.containsModifier(atpb.getUpperBound(), LOST)) ||
-//                        AnnotatedTypes.containsModifier(atpb.getLowerBound(), LOST)) {
-//                    checker.reportError(tree, "uts.lost.in.bounds", atpb.toString(), type.toString());
-//                }
-//            }
         }
 
         return super.visitParameterizedType(type, tree);
@@ -94,25 +85,13 @@ public class UniverseInferenceValidator extends InferenceValidator {
 
     private void checkStaticRepError(AnnotatedTypeMirror type, Tree tree) {
         if (UniverseTypeUtil.inStaticScope(visitor.getCurrentPath())) {
-//            if (infer) {
             ((UniverseInferenceVisitor)visitor).doesNotContain(type, REP, "uts.static.rep.forbidden", tree);
-//            } else {
-//                if (AnnotatedTypes.containsModifier(type, REP)) {
-//                    checker.reportError(tree, "uts.static.rep.forbidden", type.getAnnotations(), type.toString());
-//                }
-//            }
         }
     }
 
     private void checkImplicitlyBottomTypeError(AnnotatedTypeMirror type, Tree tree) {
         if (UniverseTypeUtil.isImplicitlyBottomType(type)) {
-//            if (infer) {
             ((UniverseInferenceVisitor)visitor).effectiveIs(type, BOTTOM, "type.invalid.annotations.on.use", tree);
-//            } else {
-//                if (!type.hasAnnotation(BOTTOM)) {
-//                    reportInvalidAnnotationsOnUse(type, tree);
-//                }
-//            }
         }
     }
 }

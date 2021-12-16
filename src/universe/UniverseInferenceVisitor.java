@@ -106,29 +106,12 @@ public class UniverseInferenceVisitor extends InferenceVisitor<UniverseInference
 
         if (TreeUtils.isConstructor(node)) {
             AnnotatedDeclaredType constructorReturnType = (AnnotatedDeclaredType) executableType.getReturnType();
-//            System.out.println("constructorReturnType: " + constructorReturnType);
-//            System.out.println("Self: " + SELF);
-//            SlotManager slotManager = InferenceMain.getInstance().getSlotManager(); //slotManager.getSlot(SELF)
             mainIs(constructorReturnType, SELF, "uts.constructor.not.self", node);
-//            if (infer) {
-//                UniverseTypeUtil.applyConstant(constructorReturnType, SELF);
-//            } else {
-//                if (!constructorReturnType.hasAnnotation(SELF)) {
-//                    checker.reportError(node, "uts.constructor.not.self");
-//                }
-//            }
         } else {
             AnnotatedDeclaredType declaredReceiverType = executableType.getReceiverType();
 
             if (declaredReceiverType != null) {
                 mainIs(declaredReceiverType, SELF, "uts.receiver.not.self", node);
-//                if (infer) {
-//                    UniverseTypeUtil.applyConstant(declaredReceiverType, SELF);
-//                } else {
-//                    if (!declaredReceiverType.hasAnnotation(SELF)) {
-//                        checker.reportError(node, "uts.receiver.not.self");
-//                    }
-//                }
             }
         }
         return super.visitMethod(node, p);
@@ -176,13 +159,7 @@ public class UniverseInferenceVisitor extends InferenceVisitor<UniverseInference
 
         // Check for @Lost in combined parameter types deeply.
         for (AnnotatedTypeMirror parameterType : constructor.getParameterTypes()) {
-//            if (infer) {
             doesNotContain(parameterType, LOST, "uts.lost.parameter", node);
-//            } else {
-//                if (AnnotatedTypes.containsModifier(parameterType, LOST)) {
-//                    checker.reportError(node, "uts.lost.parameter");
-//                }
-//            }
         }
 
         checkNewInstanceCreation(node);
@@ -202,24 +179,11 @@ public class UniverseInferenceVisitor extends InferenceVisitor<UniverseInference
         // Check for @Peer or @Rep as top-level modifier.
         // TODO I would say here by top-level, it's really main modifier instead of upper bounds of
         // type variables, as there is no "new T()" to create a new instance.
-//        if (infer) {
         if (UniverseTypeUtil.isImplicitlyBottomType(type)) {
             effectiveIs(type, BOTTOM, "uts.new.ownership", node);
         } else {
             mainIsNoneOf(type, new AnnotationMirror[] { LOST, ANY, SELF, BOTTOM }, "uts.new.ownership", node);
         }
-
-//        } else {
-//            if (UniverseTypeUtil.isImplicitlyBottomType(type)) {
-//                if (!type.hasAnnotation(BOTTOM)) {
-//                    checker.reportError(node, "uts.new.ownership");
-//                }
-//            } else {
-//                if (!(type.hasAnnotation(PEER) || type.hasAnnotation(REP))) {
-//                    checker.reportError(node, "uts.new.ownership");
-//                }
-//            }
-//        }
     }
 
     /**
@@ -236,13 +200,7 @@ public class UniverseInferenceVisitor extends InferenceVisitor<UniverseInference
         AnnotatedExecutableType methodType = atypeFactory.methodFromUse(node).executableType;
         // Check for @Lost in combined parameter types deeply.
         for (AnnotatedTypeMirror parameterType : methodType.getParameterTypes()) {
-//            if (infer) {
             doesNotContain(parameterType, LOST, "uts.lost.parameter", node);
-//            } else {
-//                if (AnnotatedTypes.containsModifier(parameterType, LOST)) {
-//                    checker.reportError(node, "uts.lost.parameter");
-//                }
-//            }
         }
 
         if (checkOaM) {
@@ -253,15 +211,7 @@ public class UniverseInferenceVisitor extends InferenceVisitor<UniverseInference
                 if (receiverType != null) {
                     ExecutableElement methodElement = TreeUtils.elementFromUse(node);
                     if (!UniverseTypeUtil.isPure(methodElement)) {
-//                        if (infer) {
                         mainIsNoneOf(receiverType, new AnnotationMirror[]{ LOST, ANY }, "oam.call.forbidden", node);
-//                        } else {
-//                            // I would say this non-lost and non-any restriction is really for declared
-//                            // types, not for type variables. As type variables can't have methods to invoke.
-//                            if (receiverType.hasAnnotation(LOST) || receiverType.hasAnnotation(ANY)) {
-//                                checker.reportError(node, "oam.call.forbidden");
-//                            }
-//                        }
                     }
                 }
             }
@@ -282,13 +232,7 @@ public class UniverseInferenceVisitor extends InferenceVisitor<UniverseInference
     public Void visitAssignment(AssignmentTree node, Void p) {
         AnnotatedTypeMirror type = atypeFactory.getAnnotatedType(node.getVariable());
         // Check for @Lost in left hand side of assignment deeply.
-//        if (infer) {
         doesNotContain(type, LOST, "uts.lost.lhs", node);
-//        } else {
-//            if (AnnotatedTypes.containsModifier(type, LOST)) {
-//                checker.reportError(node, "uts.lost.lhs");
-//            }
-//        }
 
         if (checkOaM) {
             ExpressionTree receiverTree = TreeUtils.getReceiverTree(node.getVariable());
@@ -296,16 +240,8 @@ public class UniverseInferenceVisitor extends InferenceVisitor<UniverseInference
                 AnnotatedTypeMirror receiverType = atypeFactory.getAnnotatedType(receiverTree);
 
                 if (receiverType != null) {
-//                    if (infer) {
                         // TODO: do we need to treat "this" and "super" specially?
                         mainIsNoneOf(receiverType, new AnnotationMirror[]{ LOST, ANY }, "oam.assignment.forbidden", node);
-//                    } else {
-//                        // Still, I think receiver can still only be declared types, so effectiveAnnotation
-//                        // is not needed.
-//                        if (receiverType.hasAnnotation(LOST) || receiverType.hasAnnotation(ANY)) {
-//                            checker.reportError(node, "oam.assignment.forbidden");
-//                        }
-//                    }
                 }
             }
         }
@@ -321,14 +257,8 @@ public class UniverseInferenceVisitor extends InferenceVisitor<UniverseInference
     public Void visitTypeCast(TypeCastTree node, Void p) {
         AnnotatedTypeMirror castty = atypeFactory.getAnnotatedType(node.getType());
 
-//        if (infer) {
         // I would say casting to any IS allowed.
         doesNotContain(castty, LOST, "uts.cast.type.warning", node);
-//        } else {
-//            if ((AnnotatedTypes.containsModifier(castty, LOST))) {
-//                checker.reportWarning(node, "uts.cast.type.warning", castty);
-//            }
-//        }
 
         return super.visitTypeCast(node, p);
     }
