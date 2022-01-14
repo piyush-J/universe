@@ -4,6 +4,8 @@ import universe.qual.*;
 
 public class LostNo {
 
+    // @Lost Object lo; // -Alint=allowLost doesn't forbid explicit annotation
+
     @Rep Object ro = new @Rep Object();
 
     void foo(@Rep LostNo rln) {
