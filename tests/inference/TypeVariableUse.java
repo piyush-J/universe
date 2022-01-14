@@ -1,8 +1,8 @@
 import universe.qual.*;
 
-class D<T extends Object>{}
-
 public class TypeVariableUse{
+
+	class D<T extends Object>{}
 
 	void foo() {
 		// :: fixable-error: (assignment.type.incompatible)
