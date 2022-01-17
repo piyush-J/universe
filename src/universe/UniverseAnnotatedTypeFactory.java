@@ -40,9 +40,6 @@ import java.util.Collections;
 import java.util.HashSet;
 import java.util.Set;
 
-import static universe.UniverseInferenceChecker.BOTTOM;
-import static universe.UniverseInferenceChecker.SELF;
-
 /**
  * Apply viewpoint adaptation and add implicit annotations to "this" and
  * "super".
@@ -63,7 +60,7 @@ public class UniverseAnnotatedTypeFactory extends BaseInferenceRealTypeFactory {
     public AnnotatedDeclaredType getSelfType(Tree tree) {
         AnnotatedDeclaredType type = super.getSelfType(tree);
         if (type != null) {
-            type.replaceAnnotation(SELF);
+            type.replaceAnnotation(UniverseDeclareAnnotationMirror.SELF);
         }
         return type;
     }
@@ -105,7 +102,7 @@ public class UniverseAnnotatedTypeFactory extends BaseInferenceRealTypeFactory {
     @Override
     public AnnotatedTypeMirror getTypeOfExtendsImplements(Tree clause) {
         AnnotatedTypeMirror s = super.getTypeOfExtendsImplements(clause);
-        s.replaceAnnotation(SELF);
+        s.replaceAnnotation(UniverseDeclareAnnotationMirror.SELF);
         return s;
     }
 
@@ -133,25 +130,10 @@ public class UniverseAnnotatedTypeFactory extends BaseInferenceRealTypeFactory {
 
             // There's no "super" kind, so make a string comparison.
             if (node.getName().contentEquals("super")) {
-                p.replaceAnnotation(SELF);
+                p.replaceAnnotation(UniverseDeclareAnnotationMirror.SELF);
             }
 
             return super.visitIdentifier(node, p);
-        }
-
-        @Override
-        public Void visitParameterizedType(ParameterizedTypeTree node, AnnotatedTypeMirror p) {
-            TreePath path = atypeFactory.getPath(node);
-            if (path != null) {
-                final TreePath parentPath = path.getParentPath();
-                if (parentPath != null) {
-                    final Tree parentNode = parentPath.getLeaf();
-                    if (TreeUtils.isClassTree(parentNode)) {
-                        p.replaceAnnotation(SELF);
-                    }
-                }
-            }
-            return super.visitParameterizedType(node, p);
         }
 
         @Override
@@ -268,7 +250,7 @@ public class UniverseAnnotatedTypeFactory extends BaseInferenceRealTypeFactory {
          addMissingAnnotations because we want to respect existing annotation on type*/
         private void applyImmutableIfImplicitlyBottom(AnnotatedTypeMirror type) {
             if (UniverseTypeUtil.isImplicitlyBottomType(type)) {
-                type.addMissingAnnotations(new HashSet<>(Arrays.asList(BOTTOM)));
+                type.addMissingAnnotations(new HashSet<>(Arrays.asList(UniverseDeclareAnnotationMirror.BOTTOM)));
             }
         }
     }

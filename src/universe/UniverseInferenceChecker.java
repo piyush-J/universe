@@ -13,6 +13,7 @@ import universe.qual.Lost;
 import universe.qual.Peer;
 import universe.qual.Rep;
 import universe.qual.Self;
+import universe.UniverseDeclareAnnotationMirror;
 import checkers.inference.model.ConstraintManager;
 import org.checkerframework.common.basetype.BaseAnnotatedTypeFactory;
 import org.checkerframework.dataflow.qual.Pure;
@@ -30,19 +31,10 @@ import javax.lang.model.element.AnnotationMirror;
 @SupportedLintOptions({"checkOaM", "checkStrictPurity"})
 public class UniverseInferenceChecker extends BaseInferrableChecker {
 
-    public static AnnotationMirror ANY, PEER, REP, LOST, SELF, BOTTOM, PURE;
-
     @Override
     public void initChecker() {
         super.initChecker();
-        ANY = AnnotationBuilder.fromClass(getElementUtils(), Any.class);
-        PEER = AnnotationBuilder.fromClass(getElementUtils(), Peer.class);
-        REP = AnnotationBuilder.fromClass(getElementUtils(), Rep.class);
-        LOST = AnnotationBuilder.fromClass(getElementUtils(), Lost.class);
-        SELF = AnnotationBuilder.fromClass(getElementUtils(), Self.class);
-        BOTTOM = AnnotationBuilder.fromClass(getElementUtils(), Bottom.class);
-        PURE = AnnotationBuilder.fromClass(getElementUtils(), Pure.class);
-
+        UniverseDeclareAnnotationMirror.init(this);
     }
 
     @Override

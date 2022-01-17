@@ -10,7 +10,7 @@ import org.junit.runners.Parameterized.Parameters;
 
 public class UniverseTestsStrictPurity extends CheckerFrameworkPerFileTest {
     public UniverseTestsStrictPurity(File testFile) {
-        super(testFile, UniverseInferenceChecker.class, "",
+        super(testFile, UniverseChecker.class, "",
                 "-Anomsgtext", "-Alint=checkStrictPurity", "-d", "testTmp");
     }
 

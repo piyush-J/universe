@@ -7,7 +7,7 @@ export MYDIR=`dirname $0`
 echo $CLASSPATH
 
 DEBUG=""
-CHECKER="universe.UniverseInferenceChecker"
+CHECKER="universe.UniverseChecker"
 
 POSITIONAL=()
 while [[ $# -gt 0 ]]; do

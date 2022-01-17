@@ -10,7 +10,7 @@ import org.junit.runners.Parameterized.Parameters;
 
 public class UniverseTestsLostYes extends CheckerFrameworkPerFileTest {
     public UniverseTestsLostYes(File testFile) {
-        super(testFile, UniverseInferenceChecker.class, "", "-Anomsgtext", "-d", "testTmp");
+        super(testFile, UniverseChecker.class, "", "-Anomsgtext", "-d", "testTmp");
     }
 
     @Parameters

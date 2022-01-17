@@ -1,0 +1,11 @@
+======================= Solutions =======================
+SlotID: 16  Annotation: @Lost
+SlotID: 17  Annotation: @Rep
+SlotID: 8   Annotation: @Self
+SlotID: 9   Annotation: @Self
+SlotID: 11  Annotation: @Rep
+SlotID: 12  Annotation: @Self
+SlotID: 13  Annotation: @Self
+SlotID: 14  Annotation: @Rep
+SlotID: 15  Annotation: @Any
+=========================================================

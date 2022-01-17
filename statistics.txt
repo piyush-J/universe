@@ -1,0 +1,2281 @@
+====================== Statistics =======================
+cnf_clause_size: 184
+cnf_variable_size: 70
+sat_serialization_time(ms): 3
+sat_solving_time(ms): 502
+total_slots: 17
+total_variable_slots: 11
+constantslot: 6
+sourcevariableslot: 7
+combvariableslot: 2
+refinementvariableslot: 2
+total_constraints: 13
+combineconstraint: 2
+equalityconstraint: 5
+subtypeconstraint: 2
+preferenceconstraint: 2
+inequalityconstraint: 2
+=========================================================
+====================== Statistics =======================
+cnf_clause_size: 184
+cnf_variable_size: 70
+sat_serialization_time(ms): 2
+sat_solving_time(ms): 501
+total_slots: 17
+total_variable_slots: 11
+constantslot: 6
+sourcevariableslot: 7
+combvariableslot: 2
+refinementvariableslot: 2
+total_constraints: 13
+combineconstraint: 2
+equalityconstraint: 5
+subtypeconstraint: 2
+preferenceconstraint: 2
+inequalityconstraint: 2
+=========================================================
+====================== Statistics =======================
+cnf_clause_size: 252
+cnf_variable_size: 92
+sat_serialization_time(ms): 1
+sat_solving_time(ms): 500
+total_slots: 20
+total_variable_slots: 14
+constantslot: 6
+sourcevariableslot: 9
+combvariableslot: 4
+refinementvariableslot: 1
+total_constraints: 17
+combineconstraint: 4
+subtypeconstraint: 6
+equalityconstraint: 4
+preferenceconstraint: 2
+inequalityconstraint: 1
+=========================================================
+====================== Statistics =======================
+cnf_clause_size: 292
+cnf_variable_size: 95
+sat_serialization_time(ms): 5
+sat_solving_time(ms): 501
+total_slots: 20
+total_variable_slots: 14
+constantslot: 6
+sourcevariableslot: 7
+combvariableslot: 5
+refinementvariableslot: 1
+lubvariableslot: 1
+total_constraints: 18
+combineconstraint: 5
+subtypeconstraint: 5
+inequalityconstraint: 2
+equalityconstraint: 4
+preferenceconstraint: 2
+=========================================================
+====================== Statistics =======================
+cnf_clause_size: 297
+cnf_variable_size: 102
+total_slots: 23
+total_variable_slots: 17
+constantslot: 6
+sourcevariableslot: 10
+combvariableslot: 3
+refinementvariableslot: 4
+total_constraints: 23
+equalityconstraint: 10
+combineconstraint: 3
+subtypeconstraint: 4
+preferenceconstraint: 4
+inequalityconstraint: 2
+=========================================================
+====================== Statistics =======================
+cnf_clause_size: 51
+cnf_variable_size: 24
+sat_serialization_time(ms): 1
+sat_solving_time(ms): 501
+total_slots: 10
+total_variable_slots: 4
+constantslot: 6
+sourcevariableslot: 3
+combvariableslot: 1
+total_constraints: 3
+combineconstraint: 1
+subtypeconstraint: 1
+equalityconstraint: 1
+=========================================================
+====================== Statistics =======================
+cnf_clause_size: 51
+cnf_variable_size: 24
+sat_serialization_time(ms): 4
+sat_solving_time(ms): 501
+total_slots: 10
+total_variable_slots: 4
+constantslot: 6
+sourcevariableslot: 3
+combvariableslot: 1
+total_constraints: 3
+combineconstraint: 1
+subtypeconstraint: 1
+equalityconstraint: 1
+=========================================================
+====================== Statistics =======================
+cnf_clause_size: 1370
+cnf_variable_size: 445
+sat_serialization_time(ms): 4
+sat_solving_time(ms): 502
+total_slots: 52
+total_variable_slots: 46
+constantslot: 6
+sourcevariableslot: 23
+combvariableslot: 18
+refinementvariableslot: 4
+lubvariableslot: 1
+total_constraints: 76
+combineconstraint: 18
+subtypeconstraint: 23
+inequalityconstraint: 14
+equalityconstraint: 12
+preferenceconstraint: 9
+=========================================================
+====================== Statistics =======================
+cnf_clause_size: 252
+cnf_variable_size: 92
+sat_serialization_time(ms): 3
+sat_solving_time(ms): 501
+total_slots: 20
+total_variable_slots: 14
+constantslot: 6
+sourcevariableslot: 9
+combvariableslot: 4
+refinementvariableslot: 1
+total_constraints: 17
+combineconstraint: 4
+subtypeconstraint: 6
+equalityconstraint: 4
+preferenceconstraint: 2
+inequalityconstraint: 1
+=========================================================
+====================== Statistics =======================
+cnf_clause_size: 439
+cnf_variable_size: 148
+sat_serialization_time(ms): 4
+sat_solving_time(ms): 502
+total_slots: 24
+total_variable_slots: 18
+constantslot: 6
+sourcevariableslot: 8
+combvariableslot: 7
+refinementvariableslot: 2
+lubvariableslot: 1
+total_constraints: 24
+combineconstraint: 7
+subtypeconstraint: 8
+inequalityconstraint: 2
+equalityconstraint: 5
+preferenceconstraint: 2
+=========================================================
+====================== Statistics =======================
+cnf_clause_size: 252
+cnf_variable_size: 92
+sat_serialization_time(ms): 2
+sat_solving_time(ms): 501
+total_slots: 20
+total_variable_slots: 14
+constantslot: 6
+sourcevariableslot: 9
+combvariableslot: 4
+refinementvariableslot: 1
+total_constraints: 17
+combineconstraint: 4
+subtypeconstraint: 6
+equalityconstraint: 4
+preferenceconstraint: 2
+inequalityconstraint: 1
+=========================================================
+====================== Statistics =======================
+cnf_clause_size: 252
+cnf_variable_size: 92
+sat_serialization_time(ms): 2
+sat_solving_time(ms): 501
+total_slots: 20
+total_variable_slots: 14
+constantslot: 6
+sourcevariableslot: 9
+combvariableslot: 4
+refinementvariableslot: 1
+total_constraints: 17
+combineconstraint: 4
+subtypeconstraint: 6
+equalityconstraint: 4
+preferenceconstraint: 2
+inequalityconstraint: 1
+=========================================================
+====================== Statistics =======================
+cnf_clause_size: 252
+cnf_variable_size: 92
+sat_serialization_time(ms): 2
+sat_solving_time(ms): 502
+total_slots: 20
+total_variable_slots: 14
+constantslot: 6
+sourcevariableslot: 9
+combvariableslot: 4
+refinementvariableslot: 1
+total_constraints: 17
+combineconstraint: 4
+subtypeconstraint: 6
+equalityconstraint: 4
+preferenceconstraint: 2
+inequalityconstraint: 1
+=========================================================
+====================== Statistics =======================
+cnf_clause_size: 252
+cnf_variable_size: 92
+sat_serialization_time(ms): 2
+sat_solving_time(ms): 501
+total_slots: 20
+total_variable_slots: 14
+constantslot: 6
+sourcevariableslot: 9
+combvariableslot: 4
+refinementvariableslot: 1
+total_constraints: 17
+combineconstraint: 4
+subtypeconstraint: 6
+equalityconstraint: 4
+preferenceconstraint: 2
+inequalityconstraint: 1
+=========================================================
+====================== Statistics =======================
+cnf_clause_size: 240
+cnf_variable_size: 79
+sat_serialization_time(ms): 2
+sat_solving_time(ms): 501
+total_slots: 16
+total_variable_slots: 10
+constantslot: 6
+sourcevariableslot: 7
+combvariableslot: 2
+refinementvariableslot: 1
+total_constraints: 15
+combineconstraint: 2
+subtypeconstraint: 4
+inequalityconstraint: 4
+equalityconstraint: 3
+preferenceconstraint: 2
+=========================================================
+====================== Statistics =======================
+cnf_clause_size: 240
+cnf_variable_size: 79
+sat_serialization_time(ms): 3
+sat_solving_time(ms): 501
+total_slots: 16
+total_variable_slots: 10
+constantslot: 6
+sourcevariableslot: 7
+combvariableslot: 2
+refinementvariableslot: 1
+total_constraints: 15
+combineconstraint: 2
+subtypeconstraint: 4
+inequalityconstraint: 4
+equalityconstraint: 3
+preferenceconstraint: 2
+=========================================================
+====================== Statistics =======================
+cnf_clause_size: 240
+cnf_variable_size: 79
+sat_serialization_time(ms): 3
+sat_solving_time(ms): 501
+total_slots: 16
+total_variable_slots: 10
+constantslot: 6
+sourcevariableslot: 7
+combvariableslot: 2
+refinementvariableslot: 1
+total_constraints: 15
+combineconstraint: 2
+subtypeconstraint: 4
+inequalityconstraint: 4
+equalityconstraint: 3
+preferenceconstraint: 2
+=========================================================
+====================== Statistics =======================
+cnf_clause_size: 240
+cnf_variable_size: 79
+sat_serialization_time(ms): 1
+sat_solving_time(ms): 501
+total_slots: 16
+total_variable_slots: 10
+constantslot: 6
+sourcevariableslot: 7
+combvariableslot: 2
+refinementvariableslot: 1
+total_constraints: 15
+combineconstraint: 2
+subtypeconstraint: 4
+inequalityconstraint: 4
+equalityconstraint: 3
+preferenceconstraint: 2
+=========================================================
+====================== Statistics =======================
+cnf_clause_size: 240
+cnf_variable_size: 79
+sat_serialization_time(ms): 1
+sat_solving_time(ms): 501
+total_slots: 16
+total_variable_slots: 10
+constantslot: 6
+sourcevariableslot: 7
+combvariableslot: 2
+refinementvariableslot: 1
+total_constraints: 15
+combineconstraint: 2
+subtypeconstraint: 4
+inequalityconstraint: 4
+equalityconstraint: 3
+preferenceconstraint: 2
+=========================================================
+====================== Statistics =======================
+cnf_clause_size: 240
+cnf_variable_size: 79
+sat_serialization_time(ms): 3
+sat_solving_time(ms): 501
+total_slots: 16
+total_variable_slots: 10
+constantslot: 6
+sourcevariableslot: 7
+combvariableslot: 2
+refinementvariableslot: 1
+total_constraints: 15
+combineconstraint: 2
+subtypeconstraint: 4
+inequalityconstraint: 4
+equalityconstraint: 3
+preferenceconstraint: 2
+=========================================================
+====================== Statistics =======================
+cnf_clause_size: 240
+cnf_variable_size: 79
+sat_serialization_time(ms): 2
+sat_solving_time(ms): 502
+total_slots: 16
+total_variable_slots: 10
+constantslot: 6
+sourcevariableslot: 7
+combvariableslot: 2
+refinementvariableslot: 1
+total_constraints: 15
+combineconstraint: 2
+subtypeconstraint: 4
+inequalityconstraint: 4
+equalityconstraint: 3
+preferenceconstraint: 2
+=========================================================
+====================== Statistics =======================
+cnf_clause_size: 240
+cnf_variable_size: 79
+sat_serialization_time(ms): 2
+sat_solving_time(ms): 501
+total_slots: 16
+total_variable_slots: 10
+constantslot: 6
+sourcevariableslot: 7
+combvariableslot: 2
+refinementvariableslot: 1
+total_constraints: 15
+combineconstraint: 2
+subtypeconstraint: 4
+inequalityconstraint: 4
+equalityconstraint: 3
+preferenceconstraint: 2
+=========================================================
+====================== Statistics =======================
+cnf_clause_size: 240
+cnf_variable_size: 79
+sat_serialization_time(ms): 2
+sat_solving_time(ms): 501
+total_slots: 16
+total_variable_slots: 10
+constantslot: 6
+sourcevariableslot: 7
+combvariableslot: 2
+refinementvariableslot: 1
+total_constraints: 15
+combineconstraint: 2
+subtypeconstraint: 4
+inequalityconstraint: 4
+equalityconstraint: 3
+preferenceconstraint: 2
+=========================================================
+====================== Statistics =======================
+cnf_clause_size: 240
+cnf_variable_size: 79
+sat_serialization_time(ms): 2
+sat_solving_time(ms): 501
+total_slots: 16
+total_variable_slots: 10
+constantslot: 6
+sourcevariableslot: 7
+combvariableslot: 2
+refinementvariableslot: 1
+total_constraints: 15
+combineconstraint: 2
+subtypeconstraint: 4
+inequalityconstraint: 4
+equalityconstraint: 3
+preferenceconstraint: 2
+=========================================================
+====================== Statistics =======================
+cnf_clause_size: 240
+cnf_variable_size: 79
+sat_serialization_time(ms): 1
+sat_solving_time(ms): 501
+total_slots: 16
+total_variable_slots: 10
+constantslot: 6
+sourcevariableslot: 7
+combvariableslot: 2
+refinementvariableslot: 1
+total_constraints: 15
+combineconstraint: 2
+subtypeconstraint: 4
+inequalityconstraint: 4
+equalityconstraint: 3
+preferenceconstraint: 2
+=========================================================
+====================== Statistics =======================
+cnf_clause_size: 240
+cnf_variable_size: 79
+sat_serialization_time(ms): 2
+sat_solving_time(ms): 501
+total_slots: 16
+total_variable_slots: 10
+constantslot: 6
+sourcevariableslot: 7
+combvariableslot: 2
+refinementvariableslot: 1
+total_constraints: 15
+combineconstraint: 2
+subtypeconstraint: 4
+inequalityconstraint: 4
+equalityconstraint: 3
+preferenceconstraint: 2
+=========================================================
+====================== Statistics =======================
+cnf_clause_size: 240
+cnf_variable_size: 79
+sat_serialization_time(ms): 8
+sat_solving_time(ms): 506
+total_slots: 16
+total_variable_slots: 10
+constantslot: 6
+sourcevariableslot: 7
+combvariableslot: 2
+refinementvariableslot: 1
+total_constraints: 15
+combineconstraint: 2
+subtypeconstraint: 4
+inequalityconstraint: 4
+equalityconstraint: 3
+preferenceconstraint: 2
+=========================================================
+====================== Statistics =======================
+cnf_clause_size: 240
+cnf_variable_size: 79
+sat_serialization_time(ms): 3
+sat_solving_time(ms): 502
+total_slots: 16
+total_variable_slots: 10
+constantslot: 6
+sourcevariableslot: 7
+combvariableslot: 2
+refinementvariableslot: 1
+total_constraints: 15
+combineconstraint: 2
+subtypeconstraint: 4
+inequalityconstraint: 4
+equalityconstraint: 3
+preferenceconstraint: 2
+=========================================================
+====================== Statistics =======================
+cnf_clause_size: 240
+cnf_variable_size: 79
+sat_serialization_time(ms): 2
+sat_solving_time(ms): 501
+total_slots: 16
+total_variable_slots: 10
+constantslot: 6
+sourcevariableslot: 7
+combvariableslot: 2
+refinementvariableslot: 1
+total_constraints: 15
+combineconstraint: 2
+subtypeconstraint: 4
+inequalityconstraint: 4
+equalityconstraint: 3
+preferenceconstraint: 2
+=========================================================
+====================== Statistics =======================
+cnf_clause_size: 1370
+cnf_variable_size: 445
+sat_serialization_time(ms): 5
+sat_solving_time(ms): 501
+total_slots: 52
+total_variable_slots: 46
+constantslot: 6
+sourcevariableslot: 23
+combvariableslot: 18
+refinementvariableslot: 4
+lubvariableslot: 1
+total_constraints: 76
+combineconstraint: 18
+subtypeconstraint: 23
+inequalityconstraint: 14
+equalityconstraint: 12
+preferenceconstraint: 9
+=========================================================
+====================== Statistics =======================
+cnf_clause_size: 240
+cnf_variable_size: 79
+sat_serialization_time(ms): 3
+sat_solving_time(ms): 501
+total_slots: 16
+total_variable_slots: 10
+constantslot: 6
+sourcevariableslot: 7
+combvariableslot: 2
+refinementvariableslot: 1
+total_constraints: 15
+combineconstraint: 2
+subtypeconstraint: 4
+inequalityconstraint: 4
+equalityconstraint: 3
+preferenceconstraint: 2
+=========================================================
+====================== Statistics =======================
+cnf_clause_size: 240
+cnf_variable_size: 79
+sat_serialization_time(ms): 2
+sat_solving_time(ms): 501
+total_slots: 16
+total_variable_slots: 10
+constantslot: 6
+sourcevariableslot: 7
+combvariableslot: 2
+refinementvariableslot: 1
+total_constraints: 15
+combineconstraint: 2
+subtypeconstraint: 4
+inequalityconstraint: 4
+equalityconstraint: 3
+preferenceconstraint: 2
+=========================================================
+====================== Statistics =======================
+cnf_clause_size: 240
+cnf_variable_size: 79
+sat_serialization_time(ms): 1
+sat_solving_time(ms): 501
+total_slots: 16
+total_variable_slots: 10
+constantslot: 6
+sourcevariableslot: 7
+combvariableslot: 2
+refinementvariableslot: 1
+total_constraints: 15
+combineconstraint: 2
+subtypeconstraint: 4
+inequalityconstraint: 4
+equalityconstraint: 3
+preferenceconstraint: 2
+=========================================================
+====================== Statistics =======================
+cnf_clause_size: 240
+cnf_variable_size: 79
+sat_serialization_time(ms): 3
+sat_solving_time(ms): 501
+total_slots: 16
+total_variable_slots: 10
+constantslot: 6
+sourcevariableslot: 7
+combvariableslot: 2
+refinementvariableslot: 1
+total_constraints: 15
+combineconstraint: 2
+subtypeconstraint: 4
+inequalityconstraint: 4
+equalityconstraint: 3
+preferenceconstraint: 2
+=========================================================
+====================== Statistics =======================
+cnf_clause_size: 240
+cnf_variable_size: 79
+sat_serialization_time(ms): 2
+sat_solving_time(ms): 501
+total_slots: 16
+total_variable_slots: 10
+constantslot: 6
+sourcevariableslot: 7
+combvariableslot: 2
+refinementvariableslot: 1
+total_constraints: 15
+combineconstraint: 2
+subtypeconstraint: 4
+inequalityconstraint: 4
+equalityconstraint: 3
+preferenceconstraint: 2
+=========================================================
+====================== Statistics =======================
+cnf_clause_size: 240
+cnf_variable_size: 79
+sat_serialization_time(ms): 2
+sat_solving_time(ms): 502
+total_slots: 16
+total_variable_slots: 10
+constantslot: 6
+sourcevariableslot: 7
+combvariableslot: 2
+refinementvariableslot: 1
+total_constraints: 15
+combineconstraint: 2
+subtypeconstraint: 4
+inequalityconstraint: 4
+equalityconstraint: 3
+preferenceconstraint: 2
+=========================================================
+====================== Statistics =======================
+cnf_clause_size: 240
+cnf_variable_size: 79
+sat_serialization_time(ms): 1
+sat_solving_time(ms): 501
+total_slots: 16
+total_variable_slots: 10
+constantslot: 6
+sourcevariableslot: 7
+combvariableslot: 2
+refinementvariableslot: 1
+total_constraints: 15
+combineconstraint: 2
+subtypeconstraint: 4
+inequalityconstraint: 4
+equalityconstraint: 3
+preferenceconstraint: 2
+=========================================================
+====================== Statistics =======================
+cnf_clause_size: 240
+cnf_variable_size: 79
+sat_serialization_time(ms): 1
+sat_solving_time(ms): 501
+total_slots: 16
+total_variable_slots: 10
+constantslot: 6
+sourcevariableslot: 7
+combvariableslot: 2
+refinementvariableslot: 1
+total_constraints: 15
+combineconstraint: 2
+subtypeconstraint: 4
+inequalityconstraint: 4
+equalityconstraint: 3
+preferenceconstraint: 2
+=========================================================
+====================== Statistics =======================
+cnf_clause_size: 240
+cnf_variable_size: 79
+sat_serialization_time(ms): 1
+sat_solving_time(ms): 501
+total_slots: 16
+total_variable_slots: 10
+constantslot: 6
+sourcevariableslot: 7
+combvariableslot: 2
+refinementvariableslot: 1
+total_constraints: 15
+combineconstraint: 2
+subtypeconstraint: 4
+inequalityconstraint: 4
+equalityconstraint: 3
+preferenceconstraint: 2
+=========================================================
+====================== Statistics =======================
+cnf_clause_size: 240
+cnf_variable_size: 79
+sat_serialization_time(ms): 2
+sat_solving_time(ms): 501
+total_slots: 16
+total_variable_slots: 10
+constantslot: 6
+sourcevariableslot: 7
+combvariableslot: 2
+refinementvariableslot: 1
+total_constraints: 15
+combineconstraint: 2
+subtypeconstraint: 4
+inequalityconstraint: 4
+equalityconstraint: 3
+preferenceconstraint: 2
+=========================================================
+====================== Statistics =======================
+cnf_clause_size: 240
+cnf_variable_size: 79
+sat_serialization_time(ms): 17
+sat_solving_time(ms): 503
+total_slots: 16
+total_variable_slots: 10
+constantslot: 6
+sourcevariableslot: 7
+combvariableslot: 2
+refinementvariableslot: 1
+total_constraints: 15
+combineconstraint: 2
+subtypeconstraint: 4
+inequalityconstraint: 4
+equalityconstraint: 3
+preferenceconstraint: 2
+=========================================================
+====================== Statistics =======================
+cnf_clause_size: 240
+cnf_variable_size: 79
+sat_serialization_time(ms): 2
+sat_solving_time(ms): 501
+total_slots: 15
+total_variable_slots: 9
+constantslot: 6
+sourcevariableslot: 6
+combvariableslot: 2
+refinementvariableslot: 1
+total_constraints: 15
+subtypeconstraint: 4
+combineconstraint: 2
+inequalityconstraint: 4
+equalityconstraint: 3
+preferenceconstraint: 2
+=========================================================
+====================== Statistics =======================
+cnf_clause_size: 240
+cnf_variable_size: 79
+sat_serialization_time(ms): 2
+sat_solving_time(ms): 501
+total_slots: 15
+total_variable_slots: 9
+constantslot: 6
+sourcevariableslot: 6
+combvariableslot: 2
+refinementvariableslot: 1
+total_constraints: 15
+subtypeconstraint: 4
+combineconstraint: 2
+inequalityconstraint: 4
+equalityconstraint: 3
+preferenceconstraint: 2
+=========================================================
+====================== Statistics =======================
+cnf_clause_size: 240
+cnf_variable_size: 79
+sat_serialization_time(ms): 2
+sat_solving_time(ms): 501
+total_slots: 15
+total_variable_slots: 9
+constantslot: 6
+sourcevariableslot: 6
+combvariableslot: 2
+refinementvariableslot: 1
+total_constraints: 15
+subtypeconstraint: 4
+combineconstraint: 2
+inequalityconstraint: 4
+equalityconstraint: 3
+preferenceconstraint: 2
+=========================================================
+====================== Statistics =======================
+cnf_clause_size: 68
+cnf_variable_size: 24
+sat_serialization_time(ms): 4
+sat_solving_time(ms): 501
+total_slots: 9
+total_variable_slots: 3
+constantslot: 6
+sourcevariableslot: 2
+combvariableslot: 1
+total_constraints: 4
+equalityconstraint: 1
+combineconstraint: 1
+preferenceconstraint: 1
+subtypeconstraint: 1
+=========================================================
+====================== Statistics =======================
+cnf_clause_size: 119
+cnf_variable_size: 48
+sat_serialization_time(ms): 1
+sat_solving_time(ms): 501
+total_slots: 11
+total_variable_slots: 5
+constantslot: 6
+sourcevariableslot: 3
+combvariableslot: 2
+total_constraints: 7
+preferenceconstraint: 1
+combineconstraint: 2
+subtypeconstraint: 2
+equalityconstraint: 2
+=========================================================
+====================== Statistics =======================
+cnf_clause_size: 274
+cnf_variable_size: 102
+sat_serialization_time(ms): 2
+sat_solving_time(ms): 501
+total_slots: 16
+total_variable_slots: 10
+constantslot: 6
+sourcevariableslot: 6
+combvariableslot: 3
+refinementvariableslot: 1
+total_constraints: 17
+subtypeconstraint: 5
+combineconstraint: 3
+inequalityconstraint: 4
+equalityconstraint: 3
+preferenceconstraint: 2
+=========================================================
+====================== Statistics =======================
+cnf_clause_size: 234
+cnf_variable_size: 90
+sat_serialization_time(ms): 2
+sat_solving_time(ms): 501
+total_slots: 15
+total_variable_slots: 9
+constantslot: 6
+sourcevariableslot: 5
+combvariableslot: 3
+refinementvariableslot: 1
+total_constraints: 15
+combineconstraint: 3
+subtypeconstraint: 3
+inequalityconstraint: 4
+equalityconstraint: 3
+preferenceconstraint: 2
+=========================================================
+====================== Statistics =======================
+cnf_clause_size: 234
+cnf_variable_size: 90
+sat_serialization_time(ms): 3
+sat_solving_time(ms): 501
+total_slots: 17
+total_variable_slots: 11
+constantslot: 6
+sourcevariableslot: 7
+combvariableslot: 3
+refinementvariableslot: 1
+total_constraints: 15
+equalityconstraint: 3
+combineconstraint: 3
+inequalityconstraint: 4
+subtypeconstraint: 3
+preferenceconstraint: 2
+=========================================================
+====================== Statistics =======================
+cnf_clause_size: 214
+cnf_variable_size: 77
+sat_serialization_time(ms): 2
+sat_solving_time(ms): 502
+total_slots: 17
+total_variable_slots: 11
+constantslot: 6
+sourcevariableslot: 6
+combvariableslot: 1
+refinementvariableslot: 4
+total_constraints: 16
+combineconstraint: 1
+equalityconstraint: 7
+subtypeconstraint: 3
+preferenceconstraint: 3
+inequalityconstraint: 2
+=========================================================
+====================== Statistics =======================
+cnf_clause_size: 214
+cnf_variable_size: 77
+sat_serialization_time(ms): 2
+sat_solving_time(ms): 502
+total_slots: 17
+total_variable_slots: 11
+constantslot: 6
+sourcevariableslot: 6
+combvariableslot: 1
+refinementvariableslot: 4
+total_constraints: 16
+combineconstraint: 1
+equalityconstraint: 7
+subtypeconstraint: 3
+preferenceconstraint: 3
+inequalityconstraint: 2
+=========================================================
+====================== Statistics =======================
+cnf_clause_size: 255
+cnf_variable_size: 99
+sat_serialization_time(ms): 1
+sat_solving_time(ms): 501
+total_slots: 18
+total_variable_slots: 12
+constantslot: 6
+sourcevariableslot: 7
+combvariableslot: 1
+refinementvariableslot: 4
+total_constraints: 19
+equalityconstraint: 9
+combineconstraint: 1
+subtypeconstraint: 4
+preferenceconstraint: 3
+inequalityconstraint: 2
+=========================================================
+====================== Statistics =======================
+cnf_clause_size: 274
+cnf_variable_size: 102
+sat_serialization_time(ms): 2
+sat_solving_time(ms): 501
+total_slots: 19
+total_variable_slots: 13
+constantslot: 6
+sourcevariableslot: 9
+combvariableslot: 3
+refinementvariableslot: 1
+total_constraints: 17
+combineconstraint: 3
+subtypeconstraint: 5
+equalityconstraint: 3
+inequalityconstraint: 4
+preferenceconstraint: 2
+=========================================================
+====================== Statistics =======================
+cnf_clause_size: 255
+cnf_variable_size: 99
+sat_serialization_time(ms): 3
+sat_solving_time(ms): 501
+total_slots: 19
+total_variable_slots: 13
+constantslot: 6
+sourcevariableslot: 8
+combvariableslot: 1
+refinementvariableslot: 4
+total_constraints: 19
+combineconstraint: 1
+equalityconstraint: 9
+subtypeconstraint: 4
+preferenceconstraint: 3
+inequalityconstraint: 2
+=========================================================
+====================== Statistics =======================
+cnf_clause_size: 255
+cnf_variable_size: 99
+sat_serialization_time(ms): 1
+sat_solving_time(ms): 501
+total_slots: 18
+total_variable_slots: 12
+constantslot: 6
+sourcevariableslot: 7
+combvariableslot: 1
+refinementvariableslot: 4
+total_constraints: 19
+equalityconstraint: 9
+combineconstraint: 1
+subtypeconstraint: 4
+preferenceconstraint: 3
+inequalityconstraint: 2
+=========================================================
+====================== Statistics =======================
+cnf_clause_size: 2568
+cnf_variable_size: 1064
+total_slots: 105
+total_variable_slots: 99
+constantslot: 6
+sourcevariableslot: 26
+combvariableslot: 26
+refinementvariableslot: 45
+lubvariableslot: 2
+total_constraints: 171
+subtypeconstraint: 41
+inequalityconstraint: 13
+combineconstraint: 26
+equalityconstraint: 66
+preferenceconstraint: 25
+=========================================================
+====================== Statistics =======================
+cnf_clause_size: 274
+cnf_variable_size: 71
+sat_serialization_time(ms): 2
+sat_solving_time(ms): 501
+total_slots: 20
+total_variable_slots: 14
+constantslot: 6
+sourcevariableslot: 6
+combvariableslot: 5
+refinementvariableslot: 3
+total_constraints: 17
+combineconstraint: 5
+equalityconstraint: 8
+subtypeconstraint: 2
+preferenceconstraint: 2
+=========================================================
+====================== Statistics =======================
+cnf_clause_size: 1218
+cnf_variable_size: 415
+sat_serialization_time(ms): 5
+sat_solving_time(ms): 501
+total_slots: 50
+total_variable_slots: 44
+constantslot: 6
+sourcevariableslot: 21
+combvariableslot: 18
+refinementvariableslot: 4
+lubvariableslot: 1
+total_constraints: 66
+combineconstraint: 18
+inequalityconstraint: 14
+subtypeconstraint: 13
+equalityconstraint: 12
+preferenceconstraint: 9
+=========================================================
+====================== Statistics =======================
+cnf_clause_size: 1169
+cnf_variable_size: 406
+sat_serialization_time(ms): 4
+sat_solving_time(ms): 501
+total_slots: 49
+total_variable_slots: 43
+constantslot: 6
+sourcevariableslot: 20
+combvariableslot: 18
+refinementvariableslot: 4
+lubvariableslot: 1
+total_constraints: 65
+combineconstraint: 18
+inequalityconstraint: 14
+subtypeconstraint: 13
+equalityconstraint: 12
+preferenceconstraint: 8
+=========================================================
+====================== Statistics =======================
+cnf_clause_size: 1169
+cnf_variable_size: 406
+sat_serialization_time(ms): 3
+sat_solving_time(ms): 501
+total_slots: 49
+total_variable_slots: 43
+constantslot: 6
+sourcevariableslot: 20
+combvariableslot: 18
+refinementvariableslot: 4
+lubvariableslot: 1
+total_constraints: 65
+combineconstraint: 18
+inequalityconstraint: 14
+subtypeconstraint: 13
+equalityconstraint: 12
+preferenceconstraint: 8
+=========================================================
+====================== Statistics =======================
+cnf_clause_size: 1169
+cnf_variable_size: 406
+sat_serialization_time(ms): 4
+sat_solving_time(ms): 501
+total_slots: 49
+total_variable_slots: 43
+constantslot: 6
+sourcevariableslot: 20
+combvariableslot: 18
+refinementvariableslot: 4
+lubvariableslot: 1
+total_constraints: 65
+combineconstraint: 18
+inequalityconstraint: 14
+subtypeconstraint: 13
+equalityconstraint: 12
+preferenceconstraint: 8
+=========================================================
+====================== Statistics =======================
+cnf_clause_size: 1129
+cnf_variable_size: 397
+sat_serialization_time(ms): 3
+sat_solving_time(ms): 501
+total_slots: 48
+total_variable_slots: 42
+constantslot: 6
+sourcevariableslot: 21
+combvariableslot: 16
+refinementvariableslot: 4
+lubvariableslot: 1
+total_constraints: 62
+combineconstraint: 16
+inequalityconstraint: 13
+subtypeconstraint: 12
+equalityconstraint: 12
+preferenceconstraint: 9
+=========================================================
+====================== Statistics =======================
+cnf_clause_size: 1080
+cnf_variable_size: 371
+sat_serialization_time(ms): 3
+sat_solving_time(ms): 502
+total_slots: 47
+total_variable_slots: 41
+constantslot: 6
+sourcevariableslot: 20
+combvariableslot: 16
+refinementvariableslot: 4
+lubvariableslot: 1
+total_constraints: 62
+inequalityconstraint: 13
+equalityconstraint: 12
+combineconstraint: 16
+preferenceconstraint: 9
+subtypeconstraint: 12
+=========================================================
+====================== Statistics =======================
+cnf_clause_size: 1169
+cnf_variable_size: 389
+sat_serialization_time(ms): 4
+sat_solving_time(ms): 501
+total_slots: 49
+total_variable_slots: 43
+constantslot: 6
+sourcevariableslot: 20
+combvariableslot: 18
+refinementvariableslot: 4
+lubvariableslot: 1
+total_constraints: 66
+combineconstraint: 18
+inequalityconstraint: 14
+subtypeconstraint: 13
+equalityconstraint: 12
+preferenceconstraint: 9
+=========================================================
+====================== Statistics =======================
+cnf_clause_size: 1131
+cnf_variable_size: 378
+total_slots: 48
+total_variable_slots: 42
+constantslot: 6
+sourcevariableslot: 19
+combvariableslot: 18
+refinementvariableslot: 4
+lubvariableslot: 1
+total_constraints: 65
+combineconstraint: 18
+inequalityconstraint: 14
+subtypeconstraint: 13
+equalityconstraint: 12
+preferenceconstraint: 8
+=========================================================
+====================== Statistics =======================
+cnf_clause_size: 889
+cnf_variable_size: 291
+total_slots: 41
+total_variable_slots: 35
+constantslot: 6
+sourcevariableslot: 17
+combvariableslot: 15
+refinementvariableslot: 3
+total_constraints: 53
+combineconstraint: 15
+subtypeconstraint: 9
+inequalityconstraint: 12
+equalityconstraint: 10
+preferenceconstraint: 7
+=========================================================
+====================== Statistics =======================
+cnf_clause_size: 889
+cnf_variable_size: 298
+total_slots: 41
+total_variable_slots: 35
+constantslot: 6
+sourcevariableslot: 17
+combvariableslot: 15
+refinementvariableslot: 3
+total_constraints: 53
+combineconstraint: 15
+subtypeconstraint: 9
+inequalityconstraint: 12
+equalityconstraint: 10
+preferenceconstraint: 7
+=========================================================
+====================== Statistics =======================
+cnf_clause_size: 927
+cnf_variable_size: 309
+sat_serialization_time(ms): 4
+sat_solving_time(ms): 501
+total_slots: 42
+total_variable_slots: 36
+constantslot: 6
+sourcevariableslot: 18
+combvariableslot: 15
+refinementvariableslot: 3
+total_constraints: 54
+inequalityconstraint: 12
+subtypeconstraint: 9
+equalityconstraint: 10
+preferenceconstraint: 8
+combineconstraint: 15
+=========================================================
+====================== Statistics =======================
+cnf_clause_size: 1202
+cnf_variable_size: 402
+sat_serialization_time(ms): 6
+sat_solving_time(ms): 501
+total_slots: 51
+total_variable_slots: 45
+constantslot: 6
+sourcevariableslot: 20
+combvariableslot: 21
+refinementvariableslot: 4
+total_constraints: 73
+combineconstraint: 21
+subtypeconstraint: 12
+inequalityconstraint: 20
+equalityconstraint: 12
+preferenceconstraint: 8
+=========================================================
+====================== Statistics =======================
+cnf_clause_size: 411
+cnf_variable_size: 143
+total_slots: 27
+total_variable_slots: 21
+constantslot: 6
+sourcevariableslot: 11
+combvariableslot: 10
+total_constraints: 25
+combineconstraint: 10
+subtypeconstraint: 8
+equalityconstraint: 5
+inequalityconstraint: 2
+=========================================================
+====================== Statistics =======================
+cnf_clause_size: 489
+cnf_variable_size: 188
+sat_serialization_time(ms): 3
+sat_solving_time(ms): 502
+total_slots: 29
+total_variable_slots: 23
+constantslot: 6
+sourcevariableslot: 13
+combvariableslot: 10
+total_constraints: 25
+combineconstraint: 10
+subtypeconstraint: 8
+equalityconstraint: 5
+inequalityconstraint: 2
+=========================================================
+====================== Statistics =======================
+cnf_clause_size: 489
+cnf_variable_size: 188
+sat_serialization_time(ms): 3
+sat_solving_time(ms): 501
+total_slots: 29
+total_variable_slots: 23
+constantslot: 6
+sourcevariableslot: 13
+combvariableslot: 10
+total_constraints: 25
+combineconstraint: 10
+subtypeconstraint: 8
+equalityconstraint: 5
+inequalityconstraint: 2
+=========================================================
+====================== Statistics =======================
+cnf_clause_size: 368
+cnf_variable_size: 131
+total_slots: 25
+total_variable_slots: 19
+constantslot: 6
+sourcevariableslot: 10
+combvariableslot: 9
+total_constraints: 22
+combineconstraint: 9
+subtypeconstraint: 7
+equalityconstraint: 5
+inequalityconstraint: 1
+=========================================================
+====================== Statistics =======================
+cnf_clause_size: 655
+cnf_variable_size: 244
+sat_serialization_time(ms): 4
+sat_solving_time(ms): 501
+total_slots: 30
+total_variable_slots: 24
+constantslot: 6
+sourcevariableslot: 12
+combvariableslot: 8
+refinementvariableslot: 3
+lubvariableslot: 1
+total_constraints: 40
+subtypeconstraint: 9
+inequalityconstraint: 12
+equalityconstraint: 6
+preferenceconstraint: 5
+combineconstraint: 8
+=========================================================
+====================== Statistics =======================
+cnf_clause_size: 655
+cnf_variable_size: 244
+sat_serialization_time(ms): 4
+sat_solving_time(ms): 502
+total_slots: 30
+total_variable_slots: 24
+constantslot: 6
+sourcevariableslot: 12
+combvariableslot: 8
+refinementvariableslot: 3
+lubvariableslot: 1
+total_constraints: 40
+subtypeconstraint: 9
+inequalityconstraint: 12
+equalityconstraint: 6
+preferenceconstraint: 5
+combineconstraint: 8
+=========================================================
+====================== Statistics =======================
+cnf_clause_size: 838
+cnf_variable_size: 296
+sat_serialization_time(ms): 5
+sat_solving_time(ms): 503
+total_slots: 36
+total_variable_slots: 30
+constantslot: 6
+sourcevariableslot: 14
+combvariableslot: 12
+refinementvariableslot: 3
+lubvariableslot: 1
+total_constraints: 48
+subtypeconstraint: 10
+combineconstraint: 12
+inequalityconstraint: 13
+equalityconstraint: 7
+preferenceconstraint: 6
+=========================================================
+====================== Statistics =======================
+cnf_clause_size: 327
+cnf_variable_size: 118
+total_slots: 23
+total_variable_slots: 17
+constantslot: 6
+sourcevariableslot: 9
+combvariableslot: 8
+total_constraints: 21
+combineconstraint: 8
+subtypeconstraint: 7
+equalityconstraint: 4
+inequalityconstraint: 2
+=========================================================
+====================== Statistics =======================
+cnf_clause_size: 680
+cnf_variable_size: 228
+sat_serialization_time(ms): 2
+sat_solving_time(ms): 501
+total_slots: 31
+total_variable_slots: 25
+constantslot: 6
+sourcevariableslot: 12
+combvariableslot: 11
+refinementvariableslot: 2
+total_constraints: 40
+combineconstraint: 11
+subtypeconstraint: 7
+inequalityconstraint: 12
+equalityconstraint: 5
+preferenceconstraint: 5
+=========================================================
+====================== Statistics =======================
+cnf_clause_size: 1499
+cnf_variable_size: 508
+sat_serialization_time(ms): 4
+sat_solving_time(ms): 501
+total_slots: 59
+total_variable_slots: 53
+constantslot: 6
+sourcevariableslot: 23
+combvariableslot: 24
+refinementvariableslot: 5
+lubvariableslot: 1
+total_constraints: 85
+combineconstraint: 24
+subtypeconstraint: 16
+inequalityconstraint: 22
+equalityconstraint: 14
+preferenceconstraint: 9
+=========================================================
+====================== Statistics =======================
+cnf_clause_size: 565
+cnf_variable_size: 193
+sat_serialization_time(ms): 3
+sat_solving_time(ms): 501
+total_slots: 27
+total_variable_slots: 21
+constantslot: 6
+sourcevariableslot: 10
+combvariableslot: 10
+refinementvariableslot: 1
+total_constraints: 32
+combineconstraint: 10
+subtypeconstraint: 6
+inequalityconstraint: 8
+equalityconstraint: 4
+preferenceconstraint: 4
+=========================================================
+====================== Statistics =======================
+cnf_clause_size: 1192
+cnf_variable_size: 399
+sat_serialization_time(ms): 3
+sat_solving_time(ms): 501
+total_slots: 51
+total_variable_slots: 45
+constantslot: 6
+sourcevariableslot: 20
+combvariableslot: 21
+refinementvariableslot: 4
+total_constraints: 73
+combineconstraint: 21
+subtypeconstraint: 12
+inequalityconstraint: 20
+equalityconstraint: 12
+preferenceconstraint: 8
+=========================================================
+====================== Statistics =======================
+cnf_clause_size: 1441
+cnf_variable_size: 494
+sat_serialization_time(ms): 2
+sat_solving_time(ms): 501
+total_slots: 58
+total_variable_slots: 52
+constantslot: 6
+sourcevariableslot: 22
+combvariableslot: 24
+refinementvariableslot: 5
+lubvariableslot: 1
+total_constraints: 84
+inequalityconstraint: 22
+subtypeconstraint: 16
+equalityconstraint: 14
+combineconstraint: 24
+preferenceconstraint: 8
+=========================================================
+====================== Statistics =======================
+cnf_clause_size: 1441
+cnf_variable_size: 494
+sat_serialization_time(ms): 5
+sat_solving_time(ms): 502
+total_slots: 58
+total_variable_slots: 52
+constantslot: 6
+sourcevariableslot: 22
+combvariableslot: 24
+refinementvariableslot: 5
+lubvariableslot: 1
+total_constraints: 84
+inequalityconstraint: 22
+subtypeconstraint: 16
+equalityconstraint: 14
+combineconstraint: 24
+preferenceconstraint: 8
+=========================================================
+====================== Statistics =======================
+cnf_clause_size: 1352
+cnf_variable_size: 469
+sat_serialization_time(ms): 5
+sat_solving_time(ms): 502
+total_slots: 56
+total_variable_slots: 50
+constantslot: 6
+sourcevariableslot: 22
+combvariableslot: 22
+refinementvariableslot: 5
+lubvariableslot: 1
+total_constraints: 80
+combineconstraint: 22
+inequalityconstraint: 21
+subtypeconstraint: 15
+equalityconstraint: 14
+preferenceconstraint: 8
+=========================================================
+====================== Statistics =======================
+cnf_clause_size: 1410
+cnf_variable_size: 483
+sat_serialization_time(ms): 4
+sat_solving_time(ms): 501
+total_slots: 57
+total_variable_slots: 51
+constantslot: 6
+sourcevariableslot: 23
+combvariableslot: 22
+refinementvariableslot: 5
+lubvariableslot: 1
+total_constraints: 81
+combineconstraint: 22
+subtypeconstraint: 15
+inequalityconstraint: 21
+equalityconstraint: 14
+preferenceconstraint: 9
+=========================================================
+====================== Statistics =======================
+cnf_clause_size: 1410
+cnf_variable_size: 490
+sat_serialization_time(ms): 5
+sat_solving_time(ms): 503
+total_slots: 57
+total_variable_slots: 51
+constantslot: 6
+sourcevariableslot: 23
+combvariableslot: 22
+refinementvariableslot: 5
+lubvariableslot: 1
+total_constraints: 81
+combineconstraint: 22
+inequalityconstraint: 21
+subtypeconstraint: 15
+equalityconstraint: 14
+preferenceconstraint: 9
+=========================================================
+====================== Statistics =======================
+cnf_clause_size: 1434
+cnf_variable_size: 479
+sat_serialization_time(ms): 4
+sat_solving_time(ms): 502
+total_slots: 58
+total_variable_slots: 52
+constantslot: 6
+sourcevariableslot: 22
+combvariableslot: 24
+refinementvariableslot: 5
+lubvariableslot: 1
+total_constraints: 85
+subtypeconstraint: 16
+inequalityconstraint: 22
+equalityconstraint: 14
+preferenceconstraint: 9
+combineconstraint: 24
+=========================================================
+====================== Statistics =======================
+cnf_clause_size: 1499
+cnf_variable_size: 508
+sat_serialization_time(ms): 4
+sat_solving_time(ms): 501
+total_slots: 59
+total_variable_slots: 53
+constantslot: 6
+sourcevariableslot: 23
+combvariableslot: 24
+refinementvariableslot: 5
+lubvariableslot: 1
+total_constraints: 85
+combineconstraint: 24
+subtypeconstraint: 16
+inequalityconstraint: 22
+equalityconstraint: 14
+preferenceconstraint: 9
+=========================================================
+====================== Statistics =======================
+cnf_clause_size: 1499
+cnf_variable_size: 508
+sat_serialization_time(ms): 3
+sat_solving_time(ms): 502
+total_slots: 59
+total_variable_slots: 53
+constantslot: 6
+sourcevariableslot: 23
+combvariableslot: 24
+refinementvariableslot: 5
+lubvariableslot: 1
+total_constraints: 85
+combineconstraint: 24
+subtypeconstraint: 16
+inequalityconstraint: 22
+equalityconstraint: 14
+preferenceconstraint: 9
+=========================================================
+====================== Statistics =======================
+cnf_clause_size: 650
+cnf_variable_size: 238
+sat_serialization_time(ms): 4
+sat_solving_time(ms): 502
+total_slots: 30
+total_variable_slots: 24
+constantslot: 6
+sourcevariableslot: 12
+combvariableslot: 8
+refinementvariableslot: 3
+lubvariableslot: 1
+total_constraints: 40
+subtypeconstraint: 9
+equalityconstraint: 6
+inequalityconstraint: 12
+preferenceconstraint: 5
+combineconstraint: 8
+=========================================================
+====================== Statistics =======================
+cnf_clause_size: 234
+cnf_variable_size: 90
+sat_serialization_time(ms): 3
+sat_solving_time(ms): 501
+total_slots: 17
+total_variable_slots: 11
+constantslot: 6
+sourcevariableslot: 7
+combvariableslot: 3
+refinementvariableslot: 1
+total_constraints: 15
+equalityconstraint: 3
+combineconstraint: 3
+inequalityconstraint: 4
+subtypeconstraint: 3
+preferenceconstraint: 2
+=========================================================
+====================== Statistics =======================
+cnf_clause_size: 234
+cnf_variable_size: 90
+sat_serialization_time(ms): 1
+sat_solving_time(ms): 502
+total_slots: 17
+total_variable_slots: 11
+constantslot: 6
+sourcevariableslot: 7
+combvariableslot: 3
+refinementvariableslot: 1
+total_constraints: 15
+equalityconstraint: 3
+combineconstraint: 3
+inequalityconstraint: 4
+subtypeconstraint: 3
+preferenceconstraint: 2
+=========================================================
+====================== Statistics =======================
+cnf_clause_size: 234
+cnf_variable_size: 90
+sat_serialization_time(ms): 88
+sat_solving_time(ms): 510
+total_slots: 17
+total_variable_slots: 11
+constantslot: 6
+sourcevariableslot: 7
+combvariableslot: 3
+refinementvariableslot: 1
+total_constraints: 15
+equalityconstraint: 3
+combineconstraint: 3
+inequalityconstraint: 4
+subtypeconstraint: 3
+preferenceconstraint: 2
+=========================================================
+====================== Statistics =======================
+cnf_clause_size: 234
+cnf_variable_size: 90
+sat_serialization_time(ms): 97607
+sat_solving_time(ms): 503
+total_slots: 17
+total_variable_slots: 11
+constantslot: 6
+sourcevariableslot: 7
+combvariableslot: 3
+refinementvariableslot: 1
+total_constraints: 15
+equalityconstraint: 3
+combineconstraint: 3
+inequalityconstraint: 4
+subtypeconstraint: 3
+preferenceconstraint: 2
+=========================================================
+====================== Statistics =======================
+cnf_clause_size: 234
+cnf_variable_size: 90
+sat_serialization_time(ms): 49292
+sat_solving_time(ms): 503
+total_slots: 17
+total_variable_slots: 11
+constantslot: 6
+sourcevariableslot: 7
+combvariableslot: 3
+refinementvariableslot: 1
+total_constraints: 15
+equalityconstraint: 3
+combineconstraint: 3
+inequalityconstraint: 4
+subtypeconstraint: 3
+preferenceconstraint: 2
+=========================================================
+====================== Statistics =======================
+cnf_clause_size: 234
+cnf_variable_size: 90
+sat_serialization_time(ms): 2
+sat_solving_time(ms): 501
+total_slots: 17
+total_variable_slots: 11
+constantslot: 6
+sourcevariableslot: 7
+combvariableslot: 3
+refinementvariableslot: 1
+total_constraints: 15
+equalityconstraint: 3
+combineconstraint: 3
+inequalityconstraint: 4
+subtypeconstraint: 3
+preferenceconstraint: 2
+=========================================================
+====================== Statistics =======================
+cnf_clause_size: 234
+cnf_variable_size: 90
+sat_serialization_time(ms): 2
+sat_solving_time(ms): 501
+total_slots: 17
+total_variable_slots: 11
+constantslot: 6
+sourcevariableslot: 7
+combvariableslot: 3
+refinementvariableslot: 1
+total_constraints: 15
+equalityconstraint: 3
+combineconstraint: 3
+inequalityconstraint: 4
+subtypeconstraint: 3
+preferenceconstraint: 2
+=========================================================
+====================== Statistics =======================
+cnf_clause_size: 234
+cnf_variable_size: 90
+sat_serialization_time(ms): 2
+sat_solving_time(ms): 501
+total_slots: 17
+total_variable_slots: 11
+constantslot: 6
+sourcevariableslot: 7
+combvariableslot: 3
+refinementvariableslot: 1
+total_constraints: 15
+equalityconstraint: 3
+combineconstraint: 3
+inequalityconstraint: 4
+subtypeconstraint: 3
+preferenceconstraint: 2
+=========================================================
+====================== Statistics =======================
+cnf_clause_size: 234
+cnf_variable_size: 90
+sat_serialization_time(ms): 2
+sat_solving_time(ms): 501
+total_slots: 17
+total_variable_slots: 11
+constantslot: 6
+sourcevariableslot: 7
+combvariableslot: 3
+refinementvariableslot: 1
+total_constraints: 15
+equalityconstraint: 3
+combineconstraint: 3
+inequalityconstraint: 4
+subtypeconstraint: 3
+preferenceconstraint: 2
+=========================================================
+====================== Statistics =======================
+cnf_clause_size: 234
+cnf_variable_size: 90
+sat_serialization_time(ms): 358508
+sat_solving_time(ms): 31136
+total_slots: 17
+total_variable_slots: 11
+constantslot: 6
+sourcevariableslot: 7
+combvariableslot: 3
+refinementvariableslot: 1
+total_constraints: 15
+equalityconstraint: 3
+combineconstraint: 3
+inequalityconstraint: 4
+subtypeconstraint: 3
+preferenceconstraint: 2
+=========================================================
+====================== Statistics =======================
+cnf_clause_size: 234
+cnf_variable_size: 90
+sat_serialization_time(ms): 64031
+sat_solving_time(ms): 502
+total_slots: 17
+total_variable_slots: 11
+constantslot: 6
+sourcevariableslot: 7
+combvariableslot: 3
+refinementvariableslot: 1
+total_constraints: 15
+equalityconstraint: 3
+combineconstraint: 3
+inequalityconstraint: 4
+subtypeconstraint: 3
+preferenceconstraint: 2
+=========================================================
+====================== Statistics =======================
+cnf_clause_size: 234
+cnf_variable_size: 90
+sat_serialization_time(ms): 3
+sat_solving_time(ms): 501
+total_slots: 17
+total_variable_slots: 11
+constantslot: 6
+sourcevariableslot: 7
+combvariableslot: 3
+refinementvariableslot: 1
+total_constraints: 15
+equalityconstraint: 3
+combineconstraint: 3
+inequalityconstraint: 4
+subtypeconstraint: 3
+preferenceconstraint: 2
+=========================================================
+====================== Statistics =======================
+cnf_clause_size: 234
+cnf_variable_size: 90
+sat_serialization_time(ms): 6621
+sat_solving_time(ms): 501
+total_slots: 17
+total_variable_slots: 11
+constantslot: 6
+sourcevariableslot: 7
+combvariableslot: 3
+refinementvariableslot: 1
+total_constraints: 15
+equalityconstraint: 3
+combineconstraint: 3
+inequalityconstraint: 4
+subtypeconstraint: 3
+preferenceconstraint: 2
+=========================================================
+====================== Statistics =======================
+cnf_clause_size: 234
+cnf_variable_size: 90
+sat_serialization_time(ms): 4
+sat_solving_time(ms): 502
+total_slots: 17
+total_variable_slots: 11
+constantslot: 6
+sourcevariableslot: 7
+combvariableslot: 3
+refinementvariableslot: 1
+total_constraints: 15
+equalityconstraint: 3
+combineconstraint: 3
+inequalityconstraint: 4
+subtypeconstraint: 3
+preferenceconstraint: 2
+=========================================================
+====================== Statistics =======================
+cnf_clause_size: 143
+cnf_variable_size: 72
+sat_serialization_time(ms): 4
+sat_solving_time(ms): 501
+total_slots: 13
+total_variable_slots: 7
+constantslot: 6
+sourcevariableslot: 5
+combvariableslot: 2
+total_constraints: 9
+preferenceconstraint: 1
+combineconstraint: 2
+subtypeconstraint: 3
+equalityconstraint: 3
+=========================================================
+====================== Statistics =======================
+cnf_clause_size: 51
+cnf_variable_size: 24
+sat_serialization_time(ms): 1
+sat_solving_time(ms): 501
+total_slots: 9
+total_variable_slots: 3
+constantslot: 6
+sourcevariableslot: 2
+combvariableslot: 1
+total_constraints: 3
+equalityconstraint: 1
+combineconstraint: 1
+subtypeconstraint: 1
+=========================================================
+====================== Statistics =======================
+cnf_clause_size: 69
+cnf_variable_size: 25
+sat_serialization_time(ms): 3
+sat_solving_time(ms): 501
+total_slots: 10
+total_variable_slots: 4
+constantslot: 6
+sourcevariableslot: 3
+combvariableslot: 1
+total_constraints: 5
+equalityconstraint: 2
+combineconstraint: 1
+preferenceconstraint: 1
+subtypeconstraint: 1
+=========================================================
+====================== Statistics =======================
+cnf_clause_size: 69
+cnf_variable_size: 25
+sat_serialization_time(ms): 1
+sat_solving_time(ms): 501
+total_slots: 10
+total_variable_slots: 4
+constantslot: 6
+sourcevariableslot: 3
+combvariableslot: 1
+total_constraints: 5
+equalityconstraint: 2
+combineconstraint: 1
+preferenceconstraint: 1
+subtypeconstraint: 1
+=========================================================
+====================== Statistics =======================
+cnf_clause_size: 69
+cnf_variable_size: 25
+sat_serialization_time(ms): 1
+sat_solving_time(ms): 500
+total_slots: 10
+total_variable_slots: 4
+constantslot: 6
+sourcevariableslot: 3
+combvariableslot: 1
+total_constraints: 5
+equalityconstraint: 2
+combineconstraint: 1
+preferenceconstraint: 1
+subtypeconstraint: 1
+=========================================================
+====================== Statistics =======================
+cnf_clause_size: 221
+cnf_variable_size: 71
+sat_serialization_time(ms): 2
+sat_solving_time(ms): 501
+total_slots: 18
+total_variable_slots: 12
+constantslot: 6
+sourcevariableslot: 7
+combvariableslot: 4
+refinementvariableslot: 1
+total_constraints: 15
+combineconstraint: 4
+subtypeconstraint: 4
+equalityconstraint: 4
+preferenceconstraint: 2
+inequalityconstraint: 1
+=========================================================
+====================== Statistics =======================
+cnf_clause_size: 1499
+cnf_variable_size: 508
+sat_serialization_time(ms): 3
+sat_solving_time(ms): 501
+total_slots: 59
+total_variable_slots: 53
+constantslot: 6
+sourcevariableslot: 23
+combvariableslot: 24
+refinementvariableslot: 5
+lubvariableslot: 1
+total_constraints: 85
+combineconstraint: 24
+subtypeconstraint: 16
+inequalityconstraint: 22
+equalityconstraint: 14
+preferenceconstraint: 9
+=========================================================
+====================== Statistics =======================
+cnf_clause_size: 1499
+cnf_variable_size: 508
+sat_serialization_time(ms): 5
+sat_solving_time(ms): 502
+total_slots: 59
+total_variable_slots: 53
+constantslot: 6
+sourcevariableslot: 23
+combvariableslot: 24
+refinementvariableslot: 5
+lubvariableslot: 1
+total_constraints: 85
+combineconstraint: 24
+subtypeconstraint: 16
+inequalityconstraint: 22
+equalityconstraint: 14
+preferenceconstraint: 9
+=========================================================
+====================== Statistics =======================
+cnf_clause_size: 1499
+cnf_variable_size: 508
+sat_serialization_time(ms): 3
+sat_solving_time(ms): 501
+total_slots: 59
+total_variable_slots: 53
+constantslot: 6
+sourcevariableslot: 23
+combvariableslot: 24
+refinementvariableslot: 5
+lubvariableslot: 1
+total_constraints: 85
+combineconstraint: 24
+subtypeconstraint: 16
+inequalityconstraint: 22
+equalityconstraint: 14
+preferenceconstraint: 9
+=========================================================
+====================== Statistics =======================
+cnf_clause_size: 69
+cnf_variable_size: 25
+sat_serialization_time(ms): 2
+sat_solving_time(ms): 501
+total_slots: 10
+total_variable_slots: 4
+constantslot: 6
+sourcevariableslot: 3
+combvariableslot: 1
+total_constraints: 5
+equalityconstraint: 2
+combineconstraint: 1
+preferenceconstraint: 1
+subtypeconstraint: 1
+=========================================================
+====================== Statistics =======================
+cnf_clause_size: 69
+cnf_variable_size: 25
+sat_serialization_time(ms): 1
+sat_solving_time(ms): 501
+total_slots: 10
+total_variable_slots: 4
+constantslot: 6
+sourcevariableslot: 3
+combvariableslot: 1
+total_constraints: 5
+equalityconstraint: 2
+combineconstraint: 1
+preferenceconstraint: 1
+subtypeconstraint: 1
+=========================================================
+====================== Statistics =======================
+cnf_clause_size: 221
+cnf_variable_size: 71
+sat_serialization_time(ms): 3
+sat_solving_time(ms): 501
+total_slots: 18
+total_variable_slots: 12
+constantslot: 6
+sourcevariableslot: 7
+combvariableslot: 4
+refinementvariableslot: 1
+total_constraints: 15
+combineconstraint: 4
+subtypeconstraint: 4
+equalityconstraint: 4
+preferenceconstraint: 2
+inequalityconstraint: 1
+=========================================================
+====================== Statistics =======================
+cnf_clause_size: 204
+cnf_variable_size: 70
+sat_serialization_time(ms): 1
+sat_solving_time(ms): 501
+total_slots: 18
+total_variable_slots: 12
+constantslot: 6
+sourcevariableslot: 7
+combvariableslot: 4
+refinementvariableslot: 1
+total_constraints: 14
+combineconstraint: 4
+subtypeconstraint: 4
+equalityconstraint: 3
+preferenceconstraint: 2
+inequalityconstraint: 1
+=========================================================
+====================== Statistics =======================
+cnf_clause_size: 221
+cnf_variable_size: 71
+sat_serialization_time(ms): 1
+sat_solving_time(ms): 501
+total_slots: 18
+total_variable_slots: 12
+constantslot: 6
+sourcevariableslot: 7
+combvariableslot: 4
+refinementvariableslot: 1
+total_constraints: 15
+combineconstraint: 4
+subtypeconstraint: 4
+equalityconstraint: 4
+preferenceconstraint: 2
+inequalityconstraint: 1
+=========================================================
+====================== Statistics =======================
+cnf_clause_size: 234
+cnf_variable_size: 90
+sat_serialization_time(ms): 3
+sat_solving_time(ms): 501
+total_slots: 17
+total_variable_slots: 11
+constantslot: 6
+sourcevariableslot: 7
+combvariableslot: 3
+refinementvariableslot: 1
+total_constraints: 15
+equalityconstraint: 3
+combineconstraint: 3
+inequalityconstraint: 4
+subtypeconstraint: 3
+preferenceconstraint: 2
+=========================================================
+====================== Statistics =======================
+cnf_clause_size: 234
+cnf_variable_size: 90
+sat_serialization_time(ms): 323964
+sat_solving_time(ms): 501
+total_slots: 17
+total_variable_slots: 11
+constantslot: 6
+sourcevariableslot: 7
+combvariableslot: 3
+refinementvariableslot: 1
+total_constraints: 15
+equalityconstraint: 3
+combineconstraint: 3
+inequalityconstraint: 4
+subtypeconstraint: 3
+preferenceconstraint: 2
+=========================================================
+====================== Statistics =======================
+cnf_clause_size: 234
+cnf_variable_size: 90
+sat_serialization_time(ms): 6
+sat_solving_time(ms): 502
+total_slots: 17
+total_variable_slots: 11
+constantslot: 6
+sourcevariableslot: 7
+combvariableslot: 3
+refinementvariableslot: 1
+total_constraints: 15
+equalityconstraint: 3
+combineconstraint: 3
+inequalityconstraint: 4
+subtypeconstraint: 3
+preferenceconstraint: 2
+=========================================================
+====================== Statistics =======================
+cnf_clause_size: 234
+cnf_variable_size: 90
+sat_serialization_time(ms): 104111
+sat_solving_time(ms): 502
+total_slots: 17
+total_variable_slots: 11
+constantslot: 6
+sourcevariableslot: 7
+combvariableslot: 3
+refinementvariableslot: 1
+total_constraints: 15
+equalityconstraint: 3
+combineconstraint: 3
+inequalityconstraint: 4
+subtypeconstraint: 3
+preferenceconstraint: 2
+=========================================================
+====================== Statistics =======================
+cnf_clause_size: 234
+cnf_variable_size: 90
+sat_serialization_time(ms): 3
+sat_solving_time(ms): 503
+total_slots: 17
+total_variable_slots: 11
+constantslot: 6
+sourcevariableslot: 7
+combvariableslot: 3
+refinementvariableslot: 1
+total_constraints: 15
+equalityconstraint: 3
+combineconstraint: 3
+inequalityconstraint: 4
+subtypeconstraint: 3
+preferenceconstraint: 2
+=========================================================
+====================== Statistics =======================
+cnf_clause_size: 272
+cnf_variable_size: 102
+sat_serialization_time(ms): 4
+sat_solving_time(ms): 501
+total_slots: 18
+total_variable_slots: 12
+constantslot: 6
+sourcevariableslot: 7
+combvariableslot: 4
+refinementvariableslot: 1
+total_constraints: 16
+combineconstraint: 4
+subtypeconstraint: 3
+inequalityconstraint: 4
+equalityconstraint: 3
+preferenceconstraint: 2
+=========================================================
+====================== Statistics =======================
+cnf_clause_size: 272
+cnf_variable_size: 102
+sat_serialization_time(ms): 2
+sat_solving_time(ms): 501
+total_slots: 18
+total_variable_slots: 12
+constantslot: 6
+sourcevariableslot: 7
+combvariableslot: 4
+refinementvariableslot: 1
+total_constraints: 16
+combineconstraint: 4
+subtypeconstraint: 3
+inequalityconstraint: 4
+equalityconstraint: 3
+preferenceconstraint: 2
+=========================================================
+====================== Statistics =======================
+cnf_clause_size: 272
+cnf_variable_size: 102
+sat_serialization_time(ms): 2
+sat_solving_time(ms): 501
+total_slots: 18
+total_variable_slots: 12
+constantslot: 6
+sourcevariableslot: 7
+combvariableslot: 4
+refinementvariableslot: 1
+total_constraints: 16
+combineconstraint: 4
+subtypeconstraint: 3
+inequalityconstraint: 4
+equalityconstraint: 3
+preferenceconstraint: 2
+=========================================================
+====================== Statistics =======================
+cnf_clause_size: 775
+cnf_variable_size: 262
+sat_serialization_time(ms): 3
+sat_solving_time(ms): 501
+total_slots: 38
+total_variable_slots: 32
+constantslot: 6
+sourcevariableslot: 15
+combvariableslot: 16
+refinementvariableslot: 1
+total_constraints: 53
+combineconstraint: 16
+inequalityconstraint: 15
+subtypeconstraint: 11
+equalityconstraint: 6
+preferenceconstraint: 5
+=========================================================
+====================== Statistics =======================
+cnf_clause_size: 427
+cnf_variable_size: 149
+sat_serialization_time(ms): 3
+sat_solving_time(ms): 501
+total_slots: 22
+total_variable_slots: 16
+constantslot: 6
+sourcevariableslot: 9
+combvariableslot: 6
+refinementvariableslot: 1
+total_constraints: 20
+combineconstraint: 6
+inequalityconstraint: 2
+equalityconstraint: 5
+subtypeconstraint: 5
+preferenceconstraint: 2
+=========================================================

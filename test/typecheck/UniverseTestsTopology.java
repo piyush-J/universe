@@ -10,7 +10,7 @@ import org.junit.runners.Parameterized.Parameters;
 
 public class UniverseTestsTopology extends CheckerFrameworkPerFileTest {
     public UniverseTestsTopology (File testFile) {
-        super(testFile, UniverseInferenceChecker.class,
+        super(testFile, UniverseChecker.class,
                 "", "-Anomsgtext", "-AconservativeUninferredTypeArguments", "-d", "testTmp");
     }
 

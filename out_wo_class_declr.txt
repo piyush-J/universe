@@ -1,0 +1,358 @@
+
+--- Inferring ---
+
+inside addComputedTypeAnnotations, type: Object elt: java.lang.Object CLASS
+inside addComputedTypeAnnotations, type: Collection<E extends @Any Object> elt: java.util.Collection INTERFACE
+inside addComputedTypeAnnotations, type: AbstractList<E extends Object> elt: java.util.AbstractList CLASS
+inside addComputedTypeAnnotations, type: List<E extends Object> elt: java.util.List INTERFACE
+inside addComputedTypeAnnotations, type: RandomAccess elt: java.util.RandomAccess INTERFACE
+inside addComputedTypeAnnotations, type: Cloneable elt: java.lang.Cloneable INTERFACE
+inside addComputedTypeAnnotations, type: Serializable elt: java.io.Serializable INTERFACE
+inside addComputedTypeAnnotations, type: AbstractList<E extends Object> elt: java.util.AbstractList CLASS
+inside addComputedTypeAnnotations, type: List<E extends Object> elt: java.util.List INTERFACE
+inside addComputedTypeAnnotations, type: RandomAccess elt: java.util.RandomAccess INTERFACE
+inside addComputedTypeAnnotations, type: Cloneable elt: java.lang.Cloneable INTERFACE
+inside addComputedTypeAnnotations, type: Serializable elt: java.io.Serializable INTERFACE
+inside addComputedTypeAnnotations, type: AbstractList<E extends Object> elt: java.util.AbstractList CLASS
+inside addComputedTypeAnnotations, type: List<E extends Object> elt: java.util.List INTERFACE
+inside addComputedTypeAnnotations, type: RandomAccess elt: java.util.RandomAccess INTERFACE
+inside addComputedTypeAnnotations, type: Cloneable elt: java.lang.Cloneable INTERFACE
+inside addComputedTypeAnnotations, type: Serializable elt: java.io.Serializable INTERFACE
+inside addComputedTypeAnnotations, type: AbstractList<E extends Object> elt: java.util.AbstractList CLASS
+inside addComputedTypeAnnotations, type: List<E extends Object> elt: java.util.List INTERFACE
+inside addComputedTypeAnnotations, type: RandomAccess elt: java.util.RandomAccess INTERFACE
+inside addComputedTypeAnnotations, type: Cloneable elt: java.lang.Cloneable INTERFACE
+inside addComputedTypeAnnotations, type: Serializable elt: java.io.Serializable INTERFACE
+inside addComputedTypeAnnotations, type: AbstractList<E extends Object> elt: java.util.AbstractList CLASS
+inside addComputedTypeAnnotations, type: List<E extends Object> elt: java.util.List INTERFACE
+inside addComputedTypeAnnotations, type: RandomAccess elt: java.util.RandomAccess INTERFACE
+inside addComputedTypeAnnotations, type: Cloneable elt: java.lang.Cloneable INTERFACE
+inside addComputedTypeAnnotations, type: Serializable elt: java.io.Serializable INTERFACE
+inside addComputedTypeAnnotations, type: AbstractList<E extends Object> elt: java.util.AbstractList CLASS
+inside addComputedTypeAnnotations, type: List<E extends Object> elt: java.util.List INTERFACE
+inside addComputedTypeAnnotations, type: RandomAccess elt: java.util.RandomAccess INTERFACE
+inside addComputedTypeAnnotations, type: Cloneable elt: java.lang.Cloneable INTERFACE
+inside addComputedTypeAnnotations, type: Serializable elt: java.io.Serializable INTERFACE
+inside addComputedTypeAnnotations, type: Vector<E extends Object>.Itr elt: java.util.Vector.Itr CLASS
+inside addComputedTypeAnnotations, type: ListIterator<E extends Object> elt: java.util.ListIterator INTERFACE
+inside addComputedTypeAnnotations, type: AbstractList<E extends Object> elt: java.util.AbstractList CLASS
+inside addComputedTypeAnnotations, type: List<E extends Object> elt: java.util.List INTERFACE
+inside addComputedTypeAnnotations, type: RandomAccess elt: java.util.RandomAccess INTERFACE
+inside addComputedTypeAnnotations, type: Cloneable elt: java.lang.Cloneable INTERFACE
+inside addComputedTypeAnnotations, type: Serializable elt: java.io.Serializable INTERFACE
+inside addComputedTypeAnnotations, type: Vector<E extends Object>.Itr elt: java.util.Vector.Itr CLASS
+inside addComputedTypeAnnotations, type: ListIterator<E extends Object> elt: java.util.ListIterator INTERFACE
+inside addComputedTypeAnnotations, type: AbstractList<E extends Object> elt: java.util.AbstractList CLASS
+inside addComputedTypeAnnotations, type: List<E extends Object> elt: java.util.List INTERFACE
+inside addComputedTypeAnnotations, type: RandomAccess elt: java.util.RandomAccess INTERFACE
+inside addComputedTypeAnnotations, type: Cloneable elt: java.lang.Cloneable INTERFACE
+inside addComputedTypeAnnotations, type: Serializable elt: java.io.Serializable INTERFACE
+inside addComputedTypeAnnotations, type: Object elt: java.lang.Object CLASS
+inside addComputedTypeAnnotations, type: Spliterator<E extends Object> elt: java.util.Spliterator INTERFACE
+inside addComputedTypeAnnotations, type: Object elt: java.lang.Object CLASS
+inside addComputedTypeAnnotations, type: Collection<E extends @Any Object> elt: java.util.Collection INTERFACE
+Next ID value: 1
+Next ID value: 2
+Next ID value: 3
+Next ID value: 4
+Next ID value: 5
+Next ID value: 6
+tree.getKind(): CLASS
+Next ID value: 7
+Next ID value: 8
+inside addComputedTypeAnnotations, type: Object <init>() elt: Object() CONSTRUCTOR
+inside defaultConstructorReturnToSelf
+---------------type: Object <init>() element: Object()
+(AnnotatedTypeMirror.AnnotatedExecutableType) type).getReturnType(): Object
+(AnnotatedTypeMirror.AnnotatedExecutableType) type).getReturnType(): @Self Object
+
+inside addComputedTypeAnnotations, type: Object <init>() elt: Object() CONSTRUCTOR
+inside defaultConstructorReturnToSelf
+---------------type: Object <init>() element: Object()
+(AnnotatedTypeMirror.AnnotatedExecutableType) type).getReturnType(): Object
+(AnnotatedTypeMirror.AnnotatedExecutableType) type).getReturnType(): @Self Object
+
+Next ID value: 9
+tree.getKind(): CLASS
+
+constructorReturnType: @VarAnnot(8) T
+inside addComputedTypeAnnotations, type: Object <init>() elt: Object() CONSTRUCTOR
+inside defaultConstructorReturnToSelf
+---------------type: Object <init>() element: Object()
+(AnnotatedTypeMirror.AnnotatedExecutableType) type).getReturnType(): Object
+(AnnotatedTypeMirror.AnnotatedExecutableType) type).getReturnType(): @Self Object
+
+inside addComputedTypeAnnotations, type: Object <init>() elt: Object() CONSTRUCTOR
+inside defaultConstructorReturnToSelf
+---------------type: Object <init>() element: Object()
+(AnnotatedTypeMirror.AnnotatedExecutableType) type).getReturnType(): Object
+(AnnotatedTypeMirror.AnnotatedExecutableType) type).getReturnType(): @Self Object
+
+inside addComputedTypeAnnotations, type: Object <init>() elt: Object() CONSTRUCTOR
+inside defaultConstructorReturnToSelf
+---------------type: Object <init>() element: Object()
+(AnnotatedTypeMirror.AnnotatedExecutableType) type).getReturnType(): Object
+(AnnotatedTypeMirror.AnnotatedExecutableType) type).getReturnType(): @Self Object
+
+inside addComputedTypeAnnotations, type: Object <init>() elt: Object() CONSTRUCTOR
+inside defaultConstructorReturnToSelf
+---------------type: Object <init>() element: Object()
+(AnnotatedTypeMirror.AnnotatedExecutableType) type).getReturnType(): Object
+(AnnotatedTypeMirror.AnnotatedExecutableType) type).getReturnType(): @Self Object
+
+tree.getKind(): CLASS
+Next ID value: 10
+tree.getKind(): VARIABLE
+tree.getKind(): IDENTIFIER
+Next ID value: 11
+Next ID value: 12
+inside addComputedTypeAnnotations, type: Object <init>() elt: Object() CONSTRUCTOR
+inside defaultConstructorReturnToSelf
+---------------type: Object <init>() element: Object()
+(AnnotatedTypeMirror.AnnotatedExecutableType) type).getReturnType(): Object
+(AnnotatedTypeMirror.AnnotatedExecutableType) type).getReturnType(): @Self Object
+
+inside addComputedTypeAnnotations, type: Object <init>() elt: Object() CONSTRUCTOR
+inside defaultConstructorReturnToSelf
+---------------type: Object <init>() element: Object()
+(AnnotatedTypeMirror.AnnotatedExecutableType) type).getReturnType(): Object
+(AnnotatedTypeMirror.AnnotatedExecutableType) type).getReturnType(): @Self Object
+
+Next ID value: 13
+tree.getKind(): IDENTIFIER
+Next ID value: 14
+tree.getKind(): VARIABLE
+tree.getKind(): IDENTIFIER
+Next ID value: 15
+tree.getKind(): IDENTIFIER
+Next ID value: 16
+tree.getKind(): IDENTIFIER
+tree.getKind(): VARIABLE
+tree.getKind(): IDENTIFIER
+tree.getKind(): IDENTIFIER
+tree.getKind(): IDENTIFIER
+Next ID value: 17
+tree.getKind(): CLASS
+tree.getKind(): VARIABLE
+tree.getKind(): IDENTIFIER
+tree.getKind(): VARIABLE
+tree.getKind(): IDENTIFIER
+tree.getKind(): VARIABLE
+tree.getKind(): IDENTIFIER
+tree.getKind(): VARIABLE
+tree.getKind(): IDENTIFIER
+
+constructorReturnType: @VarAnnot(12) Test3
+inside addComputedTypeAnnotations, type: Object <init>() elt: Object() CONSTRUCTOR
+inside defaultConstructorReturnToSelf
+---------------type: Object <init>() element: Object()
+(AnnotatedTypeMirror.AnnotatedExecutableType) type).getReturnType(): Object
+(AnnotatedTypeMirror.AnnotatedExecutableType) type).getReturnType(): @Self Object
+
+inside addComputedTypeAnnotations, type: Object <init>() elt: Object() CONSTRUCTOR
+inside defaultConstructorReturnToSelf
+---------------type: Object <init>() element: Object()
+(AnnotatedTypeMirror.AnnotatedExecutableType) type).getReturnType(): Object
+(AnnotatedTypeMirror.AnnotatedExecutableType) type).getReturnType(): @Self Object
+
+inside addComputedTypeAnnotations, type: Object <init>() elt: Object() CONSTRUCTOR
+inside defaultConstructorReturnToSelf
+---------------type: Object <init>() element: Object()
+(AnnotatedTypeMirror.AnnotatedExecutableType) type).getReturnType(): Object
+(AnnotatedTypeMirror.AnnotatedExecutableType) type).getReturnType(): @Self Object
+
+inside addComputedTypeAnnotations, type: Object <init>() elt: Object() CONSTRUCTOR
+inside defaultConstructorReturnToSelf
+---------------type: Object <init>() element: Object()
+(AnnotatedTypeMirror.AnnotatedExecutableType) type).getReturnType(): Object
+(AnnotatedTypeMirror.AnnotatedExecutableType) type).getReturnType(): @Self Object
+
+tree.getKind(): VARIABLE
+tree.getKind(): IDENTIFIER
+tree.getKind(): VARIABLE
+tree.getKind(): IDENTIFIER
+tree.getKind(): VARIABLE
+tree.getKind(): IDENTIFIER
+tree.getKind(): VARIABLE
+tree.getKind(): IDENTIFIER
+tree.getKind(): IDENTIFIER
+tree.getKind(): IDENTIFIER
+tree.getKind(): IDENTIFIER
+tree.getKind(): IDENTIFIER
+tree.getKind(): IDENTIFIER
+tree.getKind(): IDENTIFIER
+tree.getKind(): IDENTIFIER
+tree.getKind(): IDENTIFIER
+tree.getKind(): IDENTIFIER
+tree.getKind(): IDENTIFIER
+tree.getKind(): IDENTIFIER
+tree.getKind(): IDENTIFIER
+tree.getKind(): VARIABLE
+tree.getKind(): IDENTIFIER
+inside addComputedTypeAnnotations, type: Object elt: java.lang.Object CLASS
+inside addComputedTypeAnnotations, type: Collection<E extends @Any Object> elt: java.util.Collection INTERFACE
+inside addComputedTypeAnnotations, type: AbstractList<E extends Object> elt: java.util.AbstractList CLASS
+inside addComputedTypeAnnotations, type: List<E extends Object> elt: java.util.List INTERFACE
+inside addComputedTypeAnnotations, type: RandomAccess elt: java.util.RandomAccess INTERFACE
+inside addComputedTypeAnnotations, type: Cloneable elt: java.lang.Cloneable INTERFACE
+inside addComputedTypeAnnotations, type: Serializable elt: java.io.Serializable INTERFACE
+inside addComputedTypeAnnotations, type: AbstractList<E extends Object> elt: java.util.AbstractList CLASS
+inside addComputedTypeAnnotations, type: List<E extends Object> elt: java.util.List INTERFACE
+inside addComputedTypeAnnotations, type: RandomAccess elt: java.util.RandomAccess INTERFACE
+inside addComputedTypeAnnotations, type: Cloneable elt: java.lang.Cloneable INTERFACE
+inside addComputedTypeAnnotations, type: Serializable elt: java.io.Serializable INTERFACE
+inside addComputedTypeAnnotations, type: AbstractList<E extends Object> elt: java.util.AbstractList CLASS
+inside addComputedTypeAnnotations, type: List<E extends Object> elt: java.util.List INTERFACE
+inside addComputedTypeAnnotations, type: RandomAccess elt: java.util.RandomAccess INTERFACE
+inside addComputedTypeAnnotations, type: Cloneable elt: java.lang.Cloneable INTERFACE
+inside addComputedTypeAnnotations, type: Serializable elt: java.io.Serializable INTERFACE
+inside addComputedTypeAnnotations, type: AbstractList<E extends Object> elt: java.util.AbstractList CLASS
+inside addComputedTypeAnnotations, type: List<E extends Object> elt: java.util.List INTERFACE
+inside addComputedTypeAnnotations, type: RandomAccess elt: java.util.RandomAccess INTERFACE
+inside addComputedTypeAnnotations, type: Cloneable elt: java.lang.Cloneable INTERFACE
+inside addComputedTypeAnnotations, type: Serializable elt: java.io.Serializable INTERFACE
+inside addComputedTypeAnnotations, type: AbstractList<E extends Object> elt: java.util.AbstractList CLASS
+inside addComputedTypeAnnotations, type: List<E extends Object> elt: java.util.List INTERFACE
+inside addComputedTypeAnnotations, type: RandomAccess elt: java.util.RandomAccess INTERFACE
+inside addComputedTypeAnnotations, type: Cloneable elt: java.lang.Cloneable INTERFACE
+inside addComputedTypeAnnotations, type: Serializable elt: java.io.Serializable INTERFACE
+inside addComputedTypeAnnotations, type: AbstractList<E extends Object> elt: java.util.AbstractList CLASS
+inside addComputedTypeAnnotations, type: List<E extends Object> elt: java.util.List INTERFACE
+inside addComputedTypeAnnotations, type: RandomAccess elt: java.util.RandomAccess INTERFACE
+inside addComputedTypeAnnotations, type: Cloneable elt: java.lang.Cloneable INTERFACE
+inside addComputedTypeAnnotations, type: Serializable elt: java.io.Serializable INTERFACE
+inside addComputedTypeAnnotations, type: Vector<E extends Object>.Itr elt: java.util.Vector.Itr CLASS
+inside addComputedTypeAnnotations, type: ListIterator<E extends Object> elt: java.util.ListIterator INTERFACE
+inside addComputedTypeAnnotations, type: AbstractList<E extends Object> elt: java.util.AbstractList CLASS
+inside addComputedTypeAnnotations, type: List<E extends Object> elt: java.util.List INTERFACE
+inside addComputedTypeAnnotations, type: RandomAccess elt: java.util.RandomAccess INTERFACE
+inside addComputedTypeAnnotations, type: Cloneable elt: java.lang.Cloneable INTERFACE
+inside addComputedTypeAnnotations, type: Serializable elt: java.io.Serializable INTERFACE
+inside addComputedTypeAnnotations, type: Vector<E extends Object>.Itr elt: java.util.Vector.Itr CLASS
+inside addComputedTypeAnnotations, type: ListIterator<E extends Object> elt: java.util.ListIterator INTERFACE
+inside addComputedTypeAnnotations, type: AbstractList<E extends Object> elt: java.util.AbstractList CLASS
+inside addComputedTypeAnnotations, type: List<E extends Object> elt: java.util.List INTERFACE
+inside addComputedTypeAnnotations, type: RandomAccess elt: java.util.RandomAccess INTERFACE
+inside addComputedTypeAnnotations, type: Cloneable elt: java.lang.Cloneable INTERFACE
+inside addComputedTypeAnnotations, type: Serializable elt: java.io.Serializable INTERFACE
+inside addComputedTypeAnnotations, type: Object elt: java.lang.Object CLASS
+inside addComputedTypeAnnotations, type: Spliterator<E extends Object> elt: java.util.Spliterator INTERFACE
+
+Created ConstantSlot
+  1 @Any
+
+  2 @Bottom
+
+  3 @Lost
+
+  4 @Peer
+
+  5 @Rep
+
+  6 @Self
+Piyush---MissingLocation
+PJ---T 2--<init>()V 3--null 4--T:<init>()V::
+Piyush---AstPathLocation( T.<init>()V.null:T:<init>()V:: )
+PJ---T 2--<init>()V 3--null 4--T:<init>()V::
+Piyush---MissingLocation
+PJ---Test3 2--null 3--foo 4--Test3::foo:Variable.type
+Piyush---AstPathLocation( Test3.null.foo:Test3::foo:Variable.type )
+PJ---Test3 2--null 3--foo 4--Test3::foo:Variable.type
+PJ---Test3 2--<init>()V 3--null 4--Test3:<init>()V::
+Piyush---AstPathLocation( Test3.<init>()V.null:Test3:<init>()V:: )
+PJ---Test3 2--<init>()V 3--null 4--Test3:<init>()V::
+PJ---Test3 2--<init>()V 3--null 4--Test3:<init>()V::Method.body, Block.statement 0, Variable.initializer, NewClass.identifier
+Piyush---AstPathLocation( Test3.<init>()V.null:Test3:<init>()V::Method.body, Block.statement 0, Variable.initializer, NewClass.identifier )
+PJ---Test3 2--<init>()V 3--null 4--Test3:<init>()V::Method.body, Block.statement 0, Variable.initializer, NewClass.identifier
+PJ---Test3 2--<init>()V 3--null 4--Test3:<init>()V::Method.body, Block.statement 0, Variable.type
+Piyush---AstPathLocation( Test3.<init>()V.null:Test3:<init>()V::Method.body, Block.statement 0, Variable.type )
+PJ---Test3 2--<init>()V 3--null 4--Test3:<init>()V::Method.body, Block.statement 0, Variable.type
+
+Created SourceVariableSlot
+  7
+  AstPath: MissingLocation
+
+  8
+  AstPath: AstPathLocation( T.<init>()V.null:T:<init>()V:: )
+
+  10
+  AstPath: MissingLocation
+
+  11
+  AstPath: AstPathLocation( Test3.null.foo:Test3::foo:Variable.type )
+
+  12
+  AstPath: AstPathLocation( Test3.<init>()V.null:Test3:<init>()V:: )
+
+  14
+  AstPath: AstPathLocation( Test3.<init>()V.null:Test3:<init>()V::Method.body, Block.statement 0, Variable.initializer, NewClass.identifier )
+
+  15
+  AstPath: AstPathLocation( Test3.<init>()V.null:Test3:<init>()V::Method.body, Block.statement 0, Variable.type )
+
+Created CombVariableSlot
+  9: combines [SourceVariableSlot(8), @universe.qual.Self]
+
+  13: combines [SourceVariableSlot(12), @universe.qual.Self]
+
+  16: combines [SourceVariableSlot(14), SourceVariableSlot(8)]
+PJ---Test3 2--<init>()V 3--null 4--Test3:<init>()V::Method.body, Block.statement 0, Variable.type
+Piyush---AstPathLocation( Test3.<init>()V.null:Test3:<init>()V::Method.body, Block.statement 0, Variable.type )
+PJ---Test3 2--<init>()V 3--null 4--Test3:<init>()V::Method.body, Block.statement 0, Variable.type
+PJ---Test3 2--<init>()V 3--null 4--Test3:<init>()V::Method.body, Block.statement 0
+Piyush---AstPathLocation( Test3.<init>()V.null:Test3:<init>()V::Method.body, Block.statement 0 )
+PJ---Test3 2--<init>()V 3--null 4--Test3:<init>()V::Method.body, Block.statement 0
+
+Created RefinementVariableSlot
+  17[ ↧ 15
+  AstPath: AstPathLocation( Test3.<init>()V.null:Test3:<init>()V::Method.body, Block.statement 0, Variable.type ) ]
+  AstPath: AstPathLocation( Test3.<init>()V.null:Test3:<init>()V::Method.body, Block.statement 0 )
+
+Created these Constraints:
+  11 == 5 @Rep weight = 80
+
+  12 == 6 @Self
+
+  13 <: 12
+
+  13 = ( 12 ▷ 6 @Self )
+
+  14 != 1 @Any
+
+  14 != 2 @Bottom
+
+  14 != 3 @Lost
+
+  14 != 6 @Self
+
+  14 <: 15
+
+  16 = ( 14 ▷ 8 )
+
+  17[ ↧ 15 ] == 14
+
+  17[ ↧ 15 ] == 5 @Rep weight = 80
+
+  8 == 6 @Self
+
+  9 <: 8
+
+  9 = ( 8 ▷ 6 @Self )
+
+
+--- Inference succeeded ---
+
+
+--- Inserting annotations ---
+
+Warning: IndexFileSpecification did not find classfile for: T
+Warning: IndexFileSpecification did not find classfile for: Test3
+Read 4 annotations from default.jaif
+Processing testinput/inference/Test3.java
+Parsed testinput/inference/Test3.java
+getPositions returned 1 positions in tree for testinput/inference/Test3.java
+.Writing /home/p6jha/universe/./annotated/Test3.java
+
+
+--- Insert annotations succeeded ---
+

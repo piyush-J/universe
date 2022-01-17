@@ -13,9 +13,9 @@ import org.checkerframework.javacutil.TreeUtils;
 import javax.lang.model.element.TypeElement;
 import java.util.List;
 
-import static universe.UniverseInferenceChecker.BOTTOM;
-import static universe.UniverseInferenceChecker.LOST;
-import static universe.UniverseInferenceChecker.REP;
+import static universe.UniverseDeclareAnnotationMirror.BOTTOM;
+import static universe.UniverseDeclareAnnotationMirror.LOST;
+import static universe.UniverseDeclareAnnotationMirror.REP;
 
 /**
  * This type validator ensures correct usage of ownership modifiers or generates
@@ -25,10 +25,7 @@ public class UniverseInferenceValidator extends InferenceValidator {
 
     public UniverseInferenceValidator(BaseTypeChecker checker,
                              InferenceVisitor<?, ?> visitor,
-                             // UniverseAnnotatedTypeFactory atypeFactory) {
-                             // Is it correct? Only debugging.
                              AnnotatedTypeFactory atypeFactory) {
-
         super(checker, visitor, atypeFactory);
     }
 

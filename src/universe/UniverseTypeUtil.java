@@ -23,8 +23,6 @@ import javax.lang.model.type.TypeKind;
 import java.util.Arrays;
 import java.util.List;
 
-import static universe.UniverseInferenceChecker.SELF;
-
 public class UniverseTypeUtil {
 
     private static boolean isInTypesOfImplicitForOfBottom(AnnotatedTypeMirror atm) {
@@ -109,7 +107,7 @@ public class UniverseTypeUtil {
 
     public static void defaultConstructorReturnToSelf(Element elt, AnnotatedTypeMirror type) {
         if (elt.getKind() == ElementKind.CONSTRUCTOR && type instanceof AnnotatedTypeMirror.AnnotatedExecutableType) {
-            ((AnnotatedTypeMirror.AnnotatedExecutableType) type).getReturnType().addMissingAnnotations(Arrays.asList(SELF));
+            ((AnnotatedTypeMirror.AnnotatedExecutableType) type).getReturnType().addMissingAnnotations(Arrays.asList(UniverseDeclareAnnotationMirror.SELF));
         }
     }
 }

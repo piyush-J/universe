@@ -30,11 +30,11 @@ import javax.lang.model.element.AnnotationMirror;
 import javax.lang.model.element.ExecutableElement;
 import javax.lang.model.type.TypeKind;
 
-import static universe.UniverseInferenceChecker.ANY;
-import static universe.UniverseInferenceChecker.BOTTOM;
-import static universe.UniverseInferenceChecker.LOST;
-import static universe.UniverseInferenceChecker.REP;
-import static universe.UniverseInferenceChecker.SELF;
+import static universe.UniverseDeclareAnnotationMirror.ANY;
+import static universe.UniverseDeclareAnnotationMirror.BOTTOM;
+import static universe.UniverseDeclareAnnotationMirror.LOST;
+import static universe.UniverseDeclareAnnotationMirror.REP;
+import static universe.UniverseDeclareAnnotationMirror.SELF;
 
 /**
  * Type visitor to either enforce or infer the universe type rules.
@@ -69,17 +69,15 @@ public class UniverseInferenceVisitor extends InferenceVisitor<UniverseInference
     /**
      * Ignore method receiver annotations.
      */
-    @Override
-    protected void checkMethodInvocability(AnnotatedExecutableType method, MethodInvocationTree node) {
-        return;
-    }
+//    @Override
+//    protected void checkMethodInvocability(AnnotatedExecutableType method, MethodInvocationTree node) {}
 
     /**
      * Ignore constructor receiver annotations.
      */
-    @Override
-    protected void checkConstructorInvocation(AnnotatedDeclaredType dt,
-                                              AnnotatedExecutableType constructor, NewClassTree src) {}
+//    @Override
+//    protected void checkConstructorInvocation(AnnotatedDeclaredType dt,
+//                                              AnnotatedExecutableType constructor, NewClassTree src) {}
 
     @Override
     public Void visitVariable(VariableTree node, Void p) {
@@ -273,7 +271,7 @@ public class UniverseInferenceVisitor extends InferenceVisitor<UniverseInference
         // We cannot do a simple test of casting, as isSubtypeOf requires
         // the input types to be subtypes according to Java
         if (!isTypeCastSafe(castType, exprType, node)) {
-            // This is only warning message, so even though enterred this line, it doesn't cause PICOInfer to exit.
+            // This is only warning message, so even though enterred this line, it doesn't cause inference to exit.
             checker.reportWarning(node, "cast.unsafe", exprType.toString(true), castType.toString(true));
         }
     }
@@ -304,7 +302,7 @@ public class UniverseInferenceVisitor extends InferenceVisitor<UniverseInference
             return qualHierarchy.isSubtype(castCSSlot.getValue(), exprCSSlot.getValue())
                     || qualHierarchy.isSubtype(exprCSSlot.getValue(), castCSSlot.getValue());
         } else {
-            // But if there is at least on Slot, PICOInfer guarantees that solutions don't include
+            // But if there is at least on Slot, inference guarantees that solutions don't include
             // incomparable casts.
             areComparable(castType, exprType, "uts.cast.type.error", node);
             return true;
