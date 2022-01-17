@@ -1,9 +1,11 @@
 package universe;
 
+import universe.UniverseDeclareAnnotationMirror;
 
 import javax.annotation.processing.SupportedOptions;
 
 import org.checkerframework.common.basetype.BaseTypeChecker;
+import org.checkerframework.common.basetype.BaseTypeVisitor;
 import org.checkerframework.framework.source.SupportedLintOptions;
 import org.checkerframework.framework.type.AnnotatedTypeMirror;
 
@@ -21,11 +23,15 @@ import org.checkerframework.framework.type.AnnotatedTypeMirror;
 @SupportedLintOptions({"allowLost", "checkOaM", "checkStrictPurity"})
 public class UniverseChecker extends BaseTypeChecker {
 
-    //TODO Clarify the purpose of this
-    public static boolean isAnyDefault(AnnotatedTypeMirror type) {
-        return false;
+    @Override
+    public void initChecker() {
+        super.initChecker();
+        UniverseDeclareAnnotationMirror.init(this);
     }
 
-    // TODO: purity/OaM checking
+    @Override
+    protected BaseTypeVisitor<?> createSourceVisitor() {
+        return new UniverseVisitor(this, new UniverseAnnotatedTypeFactory(this, false));
+    }
 
 }

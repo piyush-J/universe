@@ -23,11 +23,11 @@ import org.checkerframework.framework.type.treeannotator.TreeAnnotator;
 
 import javax.lang.model.element.AnnotationMirror;
 
-import static universe.UniverseInferenceChecker.ANY;
-import static universe.UniverseInferenceChecker.BOTTOM;
-import static universe.UniverseInferenceChecker.PEER;
-import static universe.UniverseInferenceChecker.REP;
-import static universe.UniverseInferenceChecker.SELF;
+import static universe.UniverseDeclareAnnotationMirror.ANY;
+import static universe.UniverseDeclareAnnotationMirror.BOTTOM;
+import static universe.UniverseDeclareAnnotationMirror.PEER;
+import static universe.UniverseDeclareAnnotationMirror.REP;
+import static universe.UniverseDeclareAnnotationMirror.SELF;
 
 public class UniverseInferenceAnnotatedTypeFactory extends InferenceAnnotatedTypeFactory {
 

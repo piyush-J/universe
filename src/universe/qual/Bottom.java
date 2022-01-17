@@ -13,8 +13,6 @@ import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
-import java.math.BigDecimal;
-import java.math.BigInteger;
 
 /**
  * The bottom of the type hierarchy is only used internally.

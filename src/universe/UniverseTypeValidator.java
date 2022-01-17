@@ -14,13 +14,13 @@ import org.checkerframework.javacutil.TreeUtils;
 import javax.lang.model.element.TypeElement;
 import java.util.List;
 
-import static universe.UniverseInferenceChecker.BOTTOM;
-import static universe.UniverseInferenceChecker.LOST;
-import static universe.UniverseInferenceChecker.REP;
+import static universe.UniverseDeclareAnnotationMirror.BOTTOM;
+import static universe.UniverseDeclareAnnotationMirror.LOST;
+import static universe.UniverseDeclareAnnotationMirror.REP;
 
 /**
- * This type validator ensures correct usage of ownership modifiers or generates
- * constraints to ensure well-formedness.
+ * This type validator ensures correct usage of ownership modifiers
+ * to ensure well-formedness.
  */
 public class UniverseTypeValidator extends BaseTypeValidator{
 
