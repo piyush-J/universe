@@ -67,17 +67,11 @@ public class UniverseInferenceVisitor extends InferenceVisitor<UniverseInference
     }
 
     /**
-     * Ignore method receiver annotations.
+     * Ignore constructor receiver annotations as result type of the constructor is always SELF for universe.
      */
-//    @Override
-//    protected void checkMethodInvocability(AnnotatedExecutableType method, MethodInvocationTree node) {}
-
-    /**
-     * Ignore constructor receiver annotations.
-     */
-//    @Override
-//    protected void checkConstructorInvocation(AnnotatedDeclaredType dt,
-//                                              AnnotatedExecutableType constructor, NewClassTree src) {}
+    @Override
+    protected void checkConstructorInvocation(AnnotatedDeclaredType dt,
+                                              AnnotatedExecutableType constructor, NewClassTree src) {}
 
     @Override
     public Void visitVariable(VariableTree node, Void p) {
