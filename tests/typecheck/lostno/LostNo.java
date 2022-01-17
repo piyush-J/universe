@@ -4,7 +4,9 @@ import universe.qual.*;
 
 public class LostNo {
 
-    // @Lost Object lo; // -Alint=allowLost doesn't forbid explicit annotation
+    // TODO: without -Alint=allowLost explicit use of Lost should be forbidden
+    // TODO :: error: (uts.explicit.lost.forbidden)
+    // @Lost Object lo;
 
     @Rep Object ro = new @Rep Object();
 

@@ -6,9 +6,8 @@ import universe.qual.Rep;
 
 public class StaticVP {
     // checking for warnings doesn't work, and needs extra lint option
-    //TODO:: error: (uts.static.peer.warning)
+    // TODO:: error: (uts.static.peer.warning)
     static @Peer Object p;
-    static Object pp;
 
     // :: error: (uts.static.rep.forbidden)
     static @Rep Object r;

@@ -8,9 +8,9 @@ import org.checkerframework.framework.test.CheckerFrameworkPerFileTest;
 import org.checkerframework.framework.test.TestUtilities;
 import org.junit.runners.Parameterized.Parameters;
 
-public class UniverseTestsTopology extends CheckerFrameworkPerFileTest {
-    public UniverseTestsTopology (File testFile) {
-        super(testFile, UniverseInferenceChecker.class,
+public class UniverseCheckerTestsTopology extends CheckerFrameworkPerFileTest {
+    public UniverseCheckerTestsTopology (File testFile) {
+        super(testFile, UniverseChecker.class,
                 "", "-Anomsgtext", "-AconservativeUninferredTypeArguments", "-d", "testTmp");
     }
 

@@ -8,8 +8,8 @@ import org.checkerframework.framework.test.CheckerFrameworkPerFileTest;
 import org.checkerframework.framework.test.TestUtilities;
 import org.junit.runners.Parameterized.Parameters;
 
-public class UniverseTestsLostYes extends CheckerFrameworkPerFileTest {
-    public UniverseTestsLostYes(File testFile) {
+public class UniverseInferenceCheckerTestsLostYes extends CheckerFrameworkPerFileTest {
+    public UniverseInferenceCheckerTestsLostYes(File testFile) {
         super(testFile, UniverseInferenceChecker.class, "", "-Anomsgtext", "-d", "testTmp");
     }
 
