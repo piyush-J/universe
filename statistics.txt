@@ -2279,3 +2279,21 @@ equalityconstraint: 5
 subtypeconstraint: 5
 preferenceconstraint: 2
 =========================================================
+====================== Statistics =======================
+cnf_clause_size: 802
+cnf_variable_size: 277
+sat_serialization_time(ms): 2
+sat_solving_time(ms): 501
+total_slots: 38
+total_variable_slots: 32
+constantslot: 6
+sourcevariableslot: 15
+combvariableslot: 16
+refinementvariableslot: 1
+total_constraints: 56
+combineconstraint: 16
+inequalityconstraint: 15
+subtypeconstraint: 14
+equalityconstraint: 6
+preferenceconstraint: 5
+=========================================================

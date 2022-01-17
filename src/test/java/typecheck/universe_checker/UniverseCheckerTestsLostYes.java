@@ -8,15 +8,15 @@ import org.checkerframework.framework.test.CheckerFrameworkPerFileTest;
 import org.checkerframework.framework.test.TestUtilities;
 import org.junit.runners.Parameterized.Parameters;
 
-public class UniverseTestsLostNo extends CheckerFrameworkPerFileTest {
-    public UniverseTestsLostNo(File testFile) {
+public class UniverseCheckerTestsLostYes extends CheckerFrameworkPerFileTest {
+    public UniverseCheckerTestsLostYes(File testFile) {
         super(testFile, UniverseChecker.class, "", "-Anomsgtext", "-d", "testTmp");
     }
 
     @Parameters
     public static List<File> getTestFiles(){
         List<File> testfiles = new ArrayList<>();
-        testfiles.addAll(TestUtilities.findRelativeNestedJavaFiles("tests", "typecheck/lostno"));
+        testfiles.addAll(TestUtilities.findRelativeNestedJavaFiles("tests", "typecheck/lostyes"));
         return testfiles;
     }
 }

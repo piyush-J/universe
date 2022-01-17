@@ -15,7 +15,7 @@ public class UniverseInferenceTest extends CFInferenceTest {
 
     public UniverseInferenceTest(File testFile) {
         super(testFile, UniverseInferenceChecker.class, "",
-                "-Anomsgtext", "-Astubs=src/universe/jdk.astub", "-d", "testTmp", "-doe");
+                "-Anomsgtext", "-Astubs=src/main/java/universe/jdk.astub", "-d", "testTmp", "-doe");
     }
 
     @Override
