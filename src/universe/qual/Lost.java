@@ -11,7 +11,7 @@ import java.lang.annotation.Target;
 
 /**
  * Ownership information is not expressible from the current viewpoint.
- * Can be used explicitly with @Option(-Alint=allowLost) (does not work right now), otherwise forbidden.
+ * Can be used explicitly with {@code @Option(-Alint=allowLost)}, otherwise forbidden.
  *
  * @author wmdietl
  */
