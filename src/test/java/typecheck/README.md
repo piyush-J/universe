@@ -1,0 +1,1 @@
+The universe_inference_checker sub-directory has test case drivers that call the checker-framework-inference methods for type checking, while the test case drivers in universe_checker sub-directory use the methods directly from checker-framework.
