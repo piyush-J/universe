@@ -1,11 +1,11 @@
 package universe;
 
-import static universe.UniverseDeclareAnnotationMirror.ANY;
-import static universe.UniverseDeclareAnnotationMirror.BOTTOM;
-import static universe.UniverseDeclareAnnotationMirror.LOST;
-import static universe.UniverseDeclareAnnotationMirror.PEER;
-import static universe.UniverseDeclareAnnotationMirror.REP;
-import static universe.UniverseDeclareAnnotationMirror.SELF;
+import static universe.UniverseAnnotationMirrorHolder.ANY;
+import static universe.UniverseAnnotationMirrorHolder.BOTTOM;
+import static universe.UniverseAnnotationMirrorHolder.LOST;
+import static universe.UniverseAnnotationMirrorHolder.PEER;
+import static universe.UniverseAnnotationMirrorHolder.REP;
+import static universe.UniverseAnnotationMirrorHolder.SELF;
 
 import javax.lang.model.element.AnnotationMirror;
 
@@ -14,9 +14,9 @@ import org.checkerframework.framework.type.AnnotatedTypeFactory;
 import org.checkerframework.framework.type.AnnotatedTypeMirror;
 import org.checkerframework.javacutil.AnnotationUtils;
 
-public class UniverseViewpointAdaptor extends AbstractViewpointAdapter {
+public class UniverseViewpointAdapter extends AbstractViewpointAdapter {
 
-    public UniverseViewpointAdaptor(AnnotatedTypeFactory atypeFactory) {
+    public UniverseViewpointAdapter(AnnotatedTypeFactory atypeFactory) {
         super(atypeFactory);
     }
 
