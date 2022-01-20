@@ -1,10 +1,10 @@
 import universe.qual.*;
 
-class C {
-	public C(Object o){}
-}
-
 public class ConstructorCall {
+
+	class C {
+		public C(Object o){}
+	}
 
 	void foo(@Peer Object op) {
 		// :: fixable-error: (argument.type.incompatible)
