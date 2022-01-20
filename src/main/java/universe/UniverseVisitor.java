@@ -22,12 +22,12 @@ import org.checkerframework.javacutil.TreeUtils;
 import javax.lang.model.element.ExecutableElement;
 import javax.lang.model.type.TypeKind;
 
-import static universe.UniverseDeclareAnnotationMirror.ANY;
-import static universe.UniverseDeclareAnnotationMirror.BOTTOM;
-import static universe.UniverseDeclareAnnotationMirror.LOST;
-import static universe.UniverseDeclareAnnotationMirror.PEER;
-import static universe.UniverseDeclareAnnotationMirror.REP;
-import static universe.UniverseDeclareAnnotationMirror.SELF;
+import static universe.UniverseAnnotationMirrorHolder.ANY;
+import static universe.UniverseAnnotationMirrorHolder.BOTTOM;
+import static universe.UniverseAnnotationMirrorHolder.LOST;
+import static universe.UniverseAnnotationMirrorHolder.PEER;
+import static universe.UniverseAnnotationMirrorHolder.REP;
+import static universe.UniverseAnnotationMirrorHolder.SELF;
 
 /**
  * Type visitor to either enforce or infer the universe type rules.

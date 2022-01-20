@@ -14,9 +14,9 @@ import org.checkerframework.javacutil.TreeUtils;
 import javax.lang.model.element.TypeElement;
 import java.util.List;
 
-import static universe.UniverseDeclareAnnotationMirror.BOTTOM;
-import static universe.UniverseDeclareAnnotationMirror.LOST;
-import static universe.UniverseDeclareAnnotationMirror.REP;
+import static universe.UniverseAnnotationMirrorHolder.BOTTOM;
+import static universe.UniverseAnnotationMirrorHolder.LOST;
+import static universe.UniverseAnnotationMirrorHolder.REP;
 
 /**
  * This type validator ensures correct usage of ownership modifiers

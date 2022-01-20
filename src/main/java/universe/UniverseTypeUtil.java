@@ -107,7 +107,7 @@ public class UniverseTypeUtil {
 
     public static void defaultConstructorReturnToSelf(Element elt, AnnotatedTypeMirror type) {
         if (elt.getKind() == ElementKind.CONSTRUCTOR && type instanceof AnnotatedTypeMirror.AnnotatedExecutableType) {
-            ((AnnotatedTypeMirror.AnnotatedExecutableType) type).getReturnType().addMissingAnnotations(Arrays.asList(UniverseDeclareAnnotationMirror.SELF));
+            ((AnnotatedTypeMirror.AnnotatedExecutableType) type).getReturnType().addMissingAnnotations(Arrays.asList(UniverseAnnotationMirrorHolder.SELF));
         }
     }
 }

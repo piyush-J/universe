@@ -18,7 +18,7 @@ import javax.lang.model.util.Elements;
  *
  */
 
-public class UniverseDeclareAnnotationMirror {
+public class UniverseAnnotationMirrorHolder {
 
     public static AnnotationMirror ANY, PEER, REP, LOST, SELF, BOTTOM, PURE;
 
