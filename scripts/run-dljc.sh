@@ -5,10 +5,8 @@ WORKING_DIR=$(pwd)
 export MYDIR=`dirname $0`
 . ./$MYDIR/setup.sh
 
-JSR308=$JSR308
-
-DLJC="$JSR308"/do-like-javac
-export AFU="$JSR308"/annotation-tools/annotation-file-utilities
+DLJC="$MYDIR"/../../do-like-javac
+export AFU="$MYDIR"/../../annotation-tools/annotation-file-utilities
 export PATH="$PATH":"$AFU"/scripts
 
 #parsing build command of the target program
