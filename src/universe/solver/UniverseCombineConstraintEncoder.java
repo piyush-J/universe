@@ -17,12 +17,12 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
-import static universe.UniverseDeclareAnnotationMirror.ANY;
-import static universe.UniverseDeclareAnnotationMirror.BOTTOM;
-import static universe.UniverseDeclareAnnotationMirror.LOST;
-import static universe.UniverseDeclareAnnotationMirror.PEER;
-import static universe.UniverseDeclareAnnotationMirror.REP;
-import static universe.UniverseDeclareAnnotationMirror.SELF;
+import static universe.UniverseAnnotationMirrorHolder.ANY;
+import static universe.UniverseAnnotationMirrorHolder.BOTTOM;
+import static universe.UniverseAnnotationMirrorHolder.LOST;
+import static universe.UniverseAnnotationMirrorHolder.PEER;
+import static universe.UniverseAnnotationMirrorHolder.REP;
+import static universe.UniverseAnnotationMirrorHolder.SELF;
 
 public class UniverseCombineConstraintEncoder extends MaxSATAbstractConstraintEncoder implements CombineConstraintEncoder<VecInt[]> {
 

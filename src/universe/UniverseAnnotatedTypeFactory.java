@@ -17,10 +17,8 @@ import universe.qual.Self;
 import com.sun.source.tree.BinaryTree;
 import com.sun.source.tree.IdentifierTree;
 import com.sun.source.tree.NewArrayTree;
-import com.sun.source.tree.ParameterizedTypeTree;
 import com.sun.source.tree.Tree;
 import com.sun.source.tree.TypeCastTree;
-import com.sun.source.util.TreePath;
 import org.checkerframework.common.basetype.BaseTypeChecker;
 import org.checkerframework.framework.type.AnnotatedTypeMirror;
 import org.checkerframework.framework.type.AnnotatedTypeMirror.AnnotatedDeclaredType;
@@ -60,7 +58,7 @@ public class UniverseAnnotatedTypeFactory extends BaseInferenceRealTypeFactory {
     public AnnotatedDeclaredType getSelfType(Tree tree) {
         AnnotatedDeclaredType type = super.getSelfType(tree);
         if (type != null) {
-            type.replaceAnnotation(UniverseDeclareAnnotationMirror.SELF);
+            type.replaceAnnotation(UniverseAnnotationMirrorHolder.SELF);
         }
         return type;
     }
@@ -102,7 +100,7 @@ public class UniverseAnnotatedTypeFactory extends BaseInferenceRealTypeFactory {
     @Override
     public AnnotatedTypeMirror getTypeOfExtendsImplements(Tree clause) {
         AnnotatedTypeMirror s = super.getTypeOfExtendsImplements(clause);
-        s.replaceAnnotation(UniverseDeclareAnnotationMirror.SELF);
+        s.replaceAnnotation(UniverseAnnotationMirrorHolder.SELF);
         return s;
     }
 
@@ -130,7 +128,7 @@ public class UniverseAnnotatedTypeFactory extends BaseInferenceRealTypeFactory {
 
             // There's no "super" kind, so make a string comparison.
             if (node.getName().contentEquals("super")) {
-                p.replaceAnnotation(UniverseDeclareAnnotationMirror.SELF);
+                p.replaceAnnotation(UniverseAnnotationMirrorHolder.SELF);
             }
 
             return super.visitIdentifier(node, p);
@@ -250,7 +248,7 @@ public class UniverseAnnotatedTypeFactory extends BaseInferenceRealTypeFactory {
          addMissingAnnotations because we want to respect existing annotation on type*/
         private void applyImmutableIfImplicitlyBottom(AnnotatedTypeMirror type) {
             if (UniverseTypeUtil.isImplicitlyBottomType(type)) {
-                type.addMissingAnnotations(new HashSet<>(Arrays.asList(UniverseDeclareAnnotationMirror.BOTTOM)));
+                type.addMissingAnnotations(new HashSet<>(Arrays.asList(UniverseAnnotationMirrorHolder.BOTTOM)));
             }
         }
     }

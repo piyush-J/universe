@@ -1,14 +1,12 @@
 package universe;
 
-import universe.UniverseDeclareAnnotationMirror;
+import universe.UniverseAnnotationMirrorHolder;
 
 import javax.annotation.processing.SupportedOptions;
 
 import org.checkerframework.common.basetype.BaseTypeChecker;
 import org.checkerframework.common.basetype.BaseTypeVisitor;
 import org.checkerframework.framework.source.SupportedLintOptions;
-import org.checkerframework.framework.type.AnnotatedTypeMirror;
-
 
 /**
  * The main checker class for the Generic Universe Types checker.
@@ -26,7 +24,7 @@ public class UniverseChecker extends BaseTypeChecker {
     @Override
     public void initChecker() {
         super.initChecker();
-        UniverseDeclareAnnotationMirror.init(this);
+        UniverseAnnotationMirrorHolder.init(this);
     }
 
     @Override

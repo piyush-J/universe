@@ -7,20 +7,9 @@ import checkers.inference.InferenceChecker;
 import checkers.inference.InferenceVisitor;
 import checkers.inference.InferrableChecker;
 import checkers.inference.SlotManager;
-import universe.qual.Any;
-import universe.qual.Bottom;
-import universe.qual.Lost;
-import universe.qual.Peer;
-import universe.qual.Rep;
-import universe.qual.Self;
-import universe.UniverseDeclareAnnotationMirror;
 import checkers.inference.model.ConstraintManager;
 import org.checkerframework.common.basetype.BaseAnnotatedTypeFactory;
-import org.checkerframework.dataflow.qual.Pure;
 import org.checkerframework.framework.source.SupportedLintOptions;
-import org.checkerframework.javacutil.AnnotationBuilder;
-
-import javax.lang.model.element.AnnotationMirror;
 
 
 /**
@@ -34,7 +23,7 @@ public class UniverseInferenceChecker extends BaseInferrableChecker {
     @Override
     public void initChecker() {
         super.initChecker();
-        UniverseDeclareAnnotationMirror.init(this);
+        UniverseAnnotationMirrorHolder.init(this);
     }
 
     @Override
