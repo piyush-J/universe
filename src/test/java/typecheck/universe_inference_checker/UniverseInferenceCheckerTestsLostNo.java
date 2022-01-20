@@ -1,22 +1,18 @@
 package universe;
 
 import java.io.File;
-import java.util.ArrayList;
 import java.util.List;
 
-import org.checkerframework.framework.test.CheckerFrameworkPerFileTest;
-import org.checkerframework.framework.test.TestUtilities;
+import org.checkerframework.framework.test.CheckerFrameworkPerDirectoryTest;
 import org.junit.runners.Parameterized.Parameters;
 
-public class UniverseInferenceCheckerTestsLostNo extends CheckerFrameworkPerFileTest {
-    public UniverseInferenceCheckerTestsLostNo(File testFile) {
-        super(testFile, UniverseInferenceChecker.class, "", "-Anomsgtext", "-d", "testTmp");
+public class UniverseInferenceCheckerTestsLostNo extends CheckerFrameworkPerDirectoryTest {
+    public UniverseInferenceCheckerTestsLostNo(List <File> testFiles) {
+        super(testFiles, UniverseInferenceChecker.class, "", "-Anomsgtext", "-d", "testTmp");
     }
 
     @Parameters
-    public static List<File> getTestFiles(){
-        List<File> testfiles = new ArrayList<>();
-        testfiles.addAll(TestUtilities.findRelativeNestedJavaFiles("tests", "typecheck/lostno"));
-        return testfiles;
+    public static String [] getTestDirs(){
+        return new String[]{"typecheck/lostno"};
     }
 }
