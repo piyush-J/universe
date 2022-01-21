@@ -25,6 +25,8 @@ export CFI="${CFI:-$(pwd -P)/../checker-framework-inference}"
 /tmp/plume-scripts/git-clone-related opprop checker-framework-inference ${CFI}
 (cd $CFI && ./.ci-build-without-test.sh)
 
+./gradlew reformat
+
 ./gradlew assemble
 
 echo Exiting "$(cd "$(dirname "$0")" && pwd -P)/$(basename "$0")" in `pwd`
