@@ -1,6 +1,6 @@
 #!/bin/bash
 set -e
-# Keep the environment settings from setup.sh script
+
 export MYDIR=`dirname $0`
 . ./$MYDIR/setup.sh
 
