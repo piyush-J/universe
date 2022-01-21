@@ -164,7 +164,7 @@ task getCodeFormatScripts() {
 
 task pythonIsInstalled(type: Exec) {
     description "Check that the python executable is installed."
-    executable = "python"
+    executable = "python3"
     args "--version"
 }
 
@@ -189,7 +189,7 @@ List<String> getJavaFilesToFormat() {
 
 task checkFormat(type: Exec, dependsOn: [getCodeFormatScripts, pythonIsInstalled], group: 'Format') {
     description 'Check whether the source code is properly formatted'
-    executable 'python'
+    executable 'python3'
     doFirst {
         args += "${formatScripts}/check-google-java-format.py"
         args += "--aosp" // 4 space indentation
@@ -205,7 +205,7 @@ task checkFormat(type: Exec, dependsOn: [getCodeFormatScripts, pythonIsInstalled
 
 task reformat(type: Exec, dependsOn: [getCodeFormatScripts, pythonIsInstalled], group: 'Format') {
     description 'Format the Java source code'
-    executable 'python'
+    executable 'python3'
     doFirst {
         args += "${formatScripts}/run-google-java-format.py"
         args += "--aosp" // 4 space indentation
