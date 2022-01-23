@@ -9,6 +9,4 @@ export SHELLOPTS
 
 . ./.ci-build-without-test.sh
 
-./scripts/check.sh tests/typecheck/topol/GBounds.java
-
 ./gradlew test
