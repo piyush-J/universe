@@ -42,6 +42,9 @@ public class UniverseGeneticMaxSatSolver extends GeneticMaxSatSolver {
         super(solverEnvironment, slots, constraints, formatTranslator, lattice);
     }
 
+    /**
+     * The fitness function in this case is the count of {@link universe.qual.Rep}
+     */
     public int fitness(final int[] chromosome) {
         IPBSolver solver = org.sat4j.maxsat.SolverFactory.newDefault();
         WDimacsReader reader =
