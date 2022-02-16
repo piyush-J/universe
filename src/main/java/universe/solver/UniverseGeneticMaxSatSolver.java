@@ -1,11 +1,15 @@
 package universe.solver;
 
+import static io.jenetics.engine.EvolutionResult.toBestEvolutionResult;
+import static io.jenetics.engine.Limits.bySteadyFitness;
+
 import checkers.inference.model.Constraint;
 import checkers.inference.model.Slot;
 import checkers.inference.solver.backend.geneticmaxsat.GeneticMaxSatSolver;
 import checkers.inference.solver.backend.maxsat.MaxSatFormatTranslator;
 import checkers.inference.solver.frontend.Lattice;
 import checkers.inference.solver.util.SolverEnvironment;
+
 import io.jenetics.IntegerGene;
 import io.jenetics.MeanAlterer;
 import io.jenetics.Mutator;
@@ -17,6 +21,7 @@ import io.jenetics.engine.Engine;
 import io.jenetics.engine.EvolutionResult;
 import io.jenetics.engine.EvolutionStatistics;
 import io.jenetics.util.IntRange;
+
 import org.sat4j.maxsat.WeightedMaxSatDecorator;
 import org.sat4j.maxsat.reader.WDimacsReader;
 import org.sat4j.pb.IPBSolver;
@@ -24,7 +29,6 @@ import org.sat4j.reader.ParseFormatException;
 import org.sat4j.specs.ContradictionException;
 import org.sat4j.specs.TimeoutException;
 
-import javax.lang.model.element.AnnotationMirror;
 import java.io.ByteArrayInputStream;
 import java.io.IOException;
 import java.io.InputStream;
@@ -34,33 +38,29 @@ import java.util.Collection;
 import java.util.List;
 import java.util.Map;
 
-import static io.jenetics.engine.EvolutionResult.toBestEvolutionResult;
-import static io.jenetics.engine.Limits.bySteadyFitness;
+import javax.lang.model.element.AnnotationMirror;
 
 public class UniverseGeneticMaxSatSolver extends GeneticMaxSatSolver {
-    public UniverseGeneticMaxSatSolver(SolverEnvironment solverEnvironment, Collection<Slot> slots, Collection<Constraint> constraints, MaxSatFormatTranslator formatTranslator, Lattice lattice) {
+    public UniverseGeneticMaxSatSolver(
+            SolverEnvironment solverEnvironment,
+            Collection<Slot> slots,
+            Collection<Constraint> constraints,
+            MaxSatFormatTranslator formatTranslator,
+            Lattice lattice) {
         super(solverEnvironment, slots, constraints, formatTranslator, lattice);
     }
 
-    /**
-     * The fitness function in this case is the count of {@link universe.qual.Rep}
-     */
+    /** The fitness function in this case is the count of {@link universe.qual.Rep} */
     public int fitness(final int[] chromosome) {
         IPBSolver solver = org.sat4j.maxsat.SolverFactory.newDefault();
-        WDimacsReader reader =
-                new WDimacsReader(new WeightedMaxSatDecorator(solver));
+        WDimacsReader reader = new WDimacsReader(new WeightedMaxSatDecorator(solver));
         Map<Integer, AnnotationMirror> solutions;
         int fitness_count = 0;
 
-        String WCNFModInput =
-                changeSoftWeights(
-                        chromosome,
-                        this.wcnfFileContent,
-                        false);
+        String WCNFModInput = changeSoftWeights(chromosome, this.wcnfFileContent, false);
 
         InputStream stream =
-                new ByteArrayInputStream(
-                        WCNFModInput.getBytes(StandardCharsets.UTF_8));
+                new ByteArrayInputStream(WCNFModInput.getBytes(StandardCharsets.UTF_8));
 
         try {
             solver = (IPBSolver) reader.parseInstance(stream);
@@ -95,10 +95,8 @@ public class UniverseGeneticMaxSatSolver extends GeneticMaxSatSolver {
     public void fit() {
         final Engine<IntegerGene, Integer> engine =
                 Engine.builder(
-                        this::fitness,
-                        Codecs.ofVector(
-                                IntRange.of(0, 700),
-                                this.allSoftWeightsCount))
+                                this::fitness,
+                                Codecs.ofVector(IntRange.of(0, 700), this.allSoftWeightsCount))
                         .populationSize(500)
                         .offspringFraction(0.7)
                         .survivorsSelector(new RouletteWheelSelector<>())
@@ -107,8 +105,7 @@ public class UniverseGeneticMaxSatSolver extends GeneticMaxSatSolver {
                         .alterers(new Mutator<>(0.03), new MeanAlterer<>(0.6))
                         .build();
 
-        final EvolutionStatistics<Integer, ?> statistics =
-                EvolutionStatistics.ofNumber();
+        final EvolutionStatistics<Integer, ?> statistics = EvolutionStatistics.ofNumber();
 
         final EvolutionResult<IntegerGene, Integer> best_res =
                 engine.stream()
@@ -122,5 +119,4 @@ public class UniverseGeneticMaxSatSolver extends GeneticMaxSatSolver {
         System.out.println("Best Phenotype: " + best_res.bestPhenotype());
         System.out.println("Worst Phenotype: " + best_res.worstPhenotype());
     }
-
 }
